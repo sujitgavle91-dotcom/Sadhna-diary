@@ -1,0 +1,2569 @@
+<!DOCTYPE html>
+<html lang="mr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#E65100">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="मंत्र साधना">
+  <title>मंत्र साधना डायरी | Mantra Sadhana Diary (२१ दिवस संकल्प)</title>
+
+  <!-- PWA Manifest Data URI -->
+  <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%B8%E0%A4%BE%E0%A4%A7%E0%A4%A8%E0%A4%BE%20%E0%A4%A1%E0%A4%BE%E0%A4%AF%E0%A4%B0%E0%A5%80%22%2C%22short_name%22%3A%22%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%B8%E0%A4%BE%E0%A4%A7%E0%A4%A8%E0%A4%BE%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23FFFBF5%22%2C%22theme_color%22%3A%22%23E65100%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20512%20512%27%3E%3Crect%20width=%27512%27%20height=%27512%27%20rx=%27128%27%20fill=%27%23E65100%27/%3E%3Ccircle%20cx=%27256%27%20cy=%27256%27%20r=%27160%27%20fill=%27none%27%20stroke=%27%23FFD54F%27%20stroke-width=%2724%27%20stroke-dasharray=%278%2020%27/%3E%3Cpath%20d=%27M256%20170c-25%200-45%2020-45%2045%200%2018%2011%2034%2027%2041-19%207-33%2026-33%2048%200%2029%2023%2052%2051%2052s51-23%2051-52c0-22-14-41-33-48%2016-7%2027-23%2027-41%200-25-20-45-45-45z%27%20fill=%27%23FFF%27/%3E%3C/svg%3E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image/svg+xml%22%7D%5D%7D">
+
+  <style>
+    /* ==========================================================================
+       CSS Variables & Theme System (Sacred Saffron Spiritual Aesthetic)
+       ========================================================================== */
+    :root {
+      --primary: #E65100;
+      --primary-dark: #BF360C;
+      --primary-light: #FF9800;
+      --primary-subtle: #FFF3E0;
+      --accent: #FFD54F;
+      --accent-gold: #F57F17;
+      
+      --bg: #FFFDF9;
+      --card-bg: #FFFFFF;
+      --card-border: #FFE0B2;
+      --card-shadow: 0 4px 16px rgba(230, 81, 0, 0.08);
+      
+      --text: #2D241E;
+      --text-secondary: #6B5B52;
+      --text-muted: #9E8E84;
+      
+      --success: #2E7D32;
+      --success-bg: #E8F5E9;
+      --warning: #F57C00;
+      --warning-bg: #FFF3E0;
+      --danger: #D32F2F;
+      --danger-bg: #FFEBEE;
+      
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-full: 9999px;
+      
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #FF7043;
+        --primary-dark: #F4511E;
+        --primary-light: #FFAB91;
+        --primary-subtle: #331F14;
+        --accent: #FFE082;
+        --accent-gold: #FFCA28;
+        
+        --bg: #140E0A;
+        --card-bg: #1F1712;
+        --card-border: #3D2B1F;
+        --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        
+        --text: #FBE9E7;
+        --text-secondary: #D7CCC8;
+        --text-muted: #8D6E63;
+        
+        --success: #66BB6A;
+        --success-bg: #1B2E1D;
+        --warning: #FFA726;
+        --warning-bg: #33230C;
+        --danger: #EF5350;
+        --danger-bg: #331515;
+      }
+    }
+
+    /* Base Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+    }
+    input, textarea, select {
+      user-select: text;
+    }
+
+    body {
+      font-family: "Noto Sans Devanagari", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding-top: var(--safe-top);
+      padding-bottom: calc(76px + var(--safe-bottom));
+      overflow-x: hidden;
+    }
+
+    /* Spiritual Header */
+    .app-header {
+      background: linear-gradient(135deg, #BF360C 0%, #E65100 50%, #FF6F00 100%);
+      color: #FFFFFF;
+      padding: calc(14px + var(--safe-top)) 16px 14px 16px;
+      box-shadow: 0 4px 14px rgba(191, 54, 12, 0.25);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+    .header-branding {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .header-title-box h1 {
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: -0.2px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .header-title-box p {
+      font-size: 11px;
+      opacity: 0.95;
+      font-weight: 500;
+    }
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .icon-btn {
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #FFFFFF;
+      width: 38px;
+      height: 38px;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 17px;
+      transition: all 0.2s ease;
+    }
+    .icon-btn:active {
+      transform: scale(0.92);
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* Sadhana Selector Bar */
+    .sadhana-bar {
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(0, 0, 0, 0.18);
+      padding: 6px 12px;
+      border-radius: var(--radius-md);
+      backdrop-filter: blur(8px);
+    }
+    .sadhana-select {
+      background: transparent;
+      border: none;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 600;
+      flex: 1;
+      outline: none;
+      cursor: pointer;
+    }
+    .sadhana-select option {
+      background-color: #2D241E;
+      color: #FFFFFF;
+    }
+    .sadhana-add-btn {
+      background: #FFD54F;
+      color: #BF360C;
+      border: none;
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      padding: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Tab Content Switcher */
+    .tab-view {
+      display: none;
+      animation: fadeIn 0.25s ease-out;
+    }
+    .tab-view.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: var(--card-shadow);
+      position: relative;
+    }
+    .card-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--primary);
+    }
+    .card-title .badge {
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      background: var(--primary-subtle);
+      color: var(--primary);
+      border: 1px solid var(--primary-light);
+    }
+    .badge-locked {
+      background: #FFF8E1 !important;
+      color: #E65100 !important;
+      border-color: #FFB300 !important;
+    }
+
+    /* Top Summary & Progress Ring Card */
+    .summary-card {
+      background: linear-gradient(145deg, var(--card-bg) 0%, var(--primary-subtle) 100%);
+      border: 1.5px solid var(--card-border);
+    }
+    .progress-hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px dashed var(--card-border);
+    }
+    .ring-container {
+      position: relative;
+      width: 120px;
+      height: 120px;
+      flex-shrink: 0;
+    }
+    .ring-svg {
+      transform: rotate(-90deg);
+      width: 120px;
+      height: 120px;
+    }
+    .ring-bg {
+      fill: none;
+      stroke: var(--card-border);
+      stroke-width: 10;
+    }
+    .ring-bar {
+      fill: none;
+      stroke: var(--primary);
+      stroke-width: 10;
+      stroke-linecap: round;
+      stroke-dasharray: 314;
+      stroke-dashoffset: 314;
+      transition: stroke-dashoffset 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .ring-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .ring-pct {
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1;
+    }
+    .ring-label {
+      font-size: 10px;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin-top: 2px;
+    }
+
+    .hero-info {
+      flex: 1;
+    }
+    .sadhana-name-badge {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4px;
+      font-size: 13px;
+    }
+    .stat-row .val {
+      font-weight: 700;
+      color: var(--primary-dark);
+    }
+
+    /* 2-Column Metrics Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .metric-box {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+    }
+    .metric-box.highlight {
+      background: linear-gradient(135deg, var(--primary-subtle) 0%, var(--card-bg) 100%);
+      border: 1.5px solid var(--primary-light);
+    }
+    .metric-box .label {
+      font-size: 11px;
+      color: var(--text-secondary);
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .metric-box .val {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .metric-box .sub {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .val.primary-text {
+      color: var(--primary);
+    }
+    .val.success-text {
+      color: var(--success);
+    }
+
+    /* Dynamic Recalculation Insight Banner */
+    .recalc-info-banner {
+      background: var(--primary-subtle);
+      border: 1px solid var(--primary-light);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+      margin-top: 12px;
+      font-size: 12px;
+      color: var(--primary-dark);
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      line-height: 1.4;
+    }
+
+    /* Completion Celebration Banner */
+    .celebration-banner {
+      display: none;
+      background: linear-gradient(135deg, #2E7D32 0%, #43A047 100%);
+      color: #FFFFFF;
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      text-align: center;
+      animation: pulseBanner 2s infinite;
+      box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+    }
+    @keyframes pulseBanner {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.02); }
+    }
+    .celebration-banner h3 {
+      font-size: 18px;
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+    .celebration-banner p {
+      font-size: 13px;
+      opacity: 0.95;
+    }
+
+    /* Reminder Alert Box */
+    .reminder-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--warning-bg);
+      border: 1px solid var(--warning);
+      color: var(--warning);
+      padding: 10px 14px;
+      border-radius: var(--radius-md);
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+    .reminder-box button {
+      background: var(--warning);
+      color: #FFF;
+      border: none;
+      padding: 5px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-left: auto;
+    }
+
+    /* Quick Action Buttons */
+    .action-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    .btn {
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+      text-align: center;
+      min-height: 48px;
+    }
+    .btn:active {
+      transform: scale(0.97);
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #FFFFFF;
+      box-shadow: 0 4px 12px rgba(230, 81, 0, 0.25);
+    }
+    .btn-secondary {
+      background: var(--card-bg);
+      border: 1.5px solid var(--card-border);
+      color: var(--primary);
+    }
+    .btn-success {
+      background: linear-gradient(135deg, #2E7D32 0%, #1B5E20 100%);
+      color: #FFFFFF;
+    }
+    .btn-outline {
+      background: transparent;
+      border: 1px solid var(--card-border);
+      color: var(--text-secondary);
+    }
+    .btn-block {
+      width: 100%;
+    }
+
+    /* Form Fields */
+    .form-group {
+      margin-bottom: 14px;
+    }
+    .form-label {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+    .input-field {
+      width: 100%;
+      height: 48px;
+      padding: 0 14px;
+      font-size: 16px;
+      border: 1.5px solid var(--card-border);
+      border-radius: var(--radius-md);
+      background: var(--card-bg);
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .input-field:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(230, 81, 0, 0.15);
+    }
+    .input-field[readonly] {
+      background: var(--primary-subtle);
+      color: var(--primary-dark);
+      cursor: not-allowed;
+      font-weight: 700;
+    }
+    textarea.input-field {
+      height: auto;
+      padding: 10px 14px;
+      min-height: 72px;
+      resize: vertical;
+    }
+    .input-with-btn {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-inline {
+      height: 48px;
+      padding: 0 14px;
+      white-space: nowrap;
+      border-radius: var(--radius-md);
+      font-size: 14px;
+      font-weight: 700;
+      background: var(--primary-subtle);
+      border: 1px solid var(--primary-light);
+      color: var(--primary);
+      cursor: pointer;
+    }
+
+    /* Live Math Preview Box */
+    .math-preview {
+      background: var(--primary-subtle);
+      border: 1px dashed var(--primary-light);
+      border-radius: var(--radius-md);
+      padding: 10px 14px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    /* Interactive Mala Counter Tab (डिजिटल जपमाळ) */
+    .counter-view {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px 0;
+    }
+    .counter-sadhana-title {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .counter-bead-ring {
+      position: relative;
+      width: 260px;
+      height: 260px;
+      margin: 16px 0 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .bead-ring-svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+    .bead-ring-track {
+      fill: none;
+      stroke: var(--card-border);
+      stroke-width: 14;
+    }
+    .bead-ring-prog {
+      fill: none;
+      stroke: var(--primary);
+      stroke-width: 14;
+      stroke-linecap: round;
+      stroke-dasharray: 754;
+      stroke-dashoffset: 754;
+      transition: stroke-dashoffset 0.15s ease;
+    }
+    .counter-tap-area {
+      width: 200px;
+      height: 200px;
+      border-radius: var(--radius-full);
+      background: radial-gradient(circle at 35% 35%, #FF8A65 0%, #D84315 70%, #BF360C 100%);
+      color: #FFFFFF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 30px rgba(191, 54, 12, 0.4), inset 0 2px 6px rgba(255, 255, 255, 0.5);
+      border: 3px solid rgba(255, 213, 79, 0.6);
+      transition: transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .counter-tap-area:active {
+      transform: scale(0.93);
+    }
+    .counter-bead-number {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .counter-bead-label {
+      font-size: 13px;
+      font-weight: 700;
+      opacity: 0.95;
+      margin-top: 4px;
+      letter-spacing: 0.5px;
+    }
+    .counter-stats-bar {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 24px;
+      width: 100%;
+      justify-content: center;
+    }
+    .counter-pill {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-full);
+      padding: 8px 18px;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--text);
+      box-shadow: var(--card-shadow);
+    }
+    .counter-pill span {
+      color: var(--primary);
+      font-size: 16px;
+    }
+
+    .counter-controls-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .btn-circle {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-full);
+      background: var(--card-bg);
+      border: 1.5px solid var(--card-border);
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: var(--card-shadow);
+    }
+    .btn-circle:active {
+      transform: scale(0.9);
+    }
+
+    /* Fixed 21-Day Calendar Grid */
+    .calendar-legend {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-bottom: 14px;
+      font-size: 11px;
+      font-weight: 600;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+    .dot-success { background: var(--success); }
+    .dot-warning { background: var(--warning); }
+    .dot-danger { background: var(--danger); }
+    .dot-today { border: 2px solid var(--primary); background: transparent; }
+
+    .cal-grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 6px;
+    }
+    .cal-day {
+      aspect-ratio: 1;
+      border-radius: var(--radius-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 700;
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      color: var(--text);
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.15s ease;
+    }
+    .cal-day:active {
+      transform: scale(0.94);
+    }
+    .cal-day.status-complete {
+      background: var(--success-bg);
+      border-color: var(--success);
+      color: var(--success);
+    }
+    .cal-day.status-partial {
+      background: var(--warning-bg);
+      border-color: var(--warning);
+      color: var(--warning);
+    }
+    .cal-day.status-missed {
+      background: var(--danger-bg);
+      border-color: var(--danger);
+      color: var(--danger);
+    }
+    .cal-day.is-today {
+      outline: 2.5px solid var(--primary);
+      outline-offset: 1px;
+      font-weight: 900;
+    }
+    .cal-day.is-future {
+      opacity: 0.45;
+      cursor: default;
+    }
+    .cal-day-num {
+      font-size: 13px;
+      line-height: 1;
+    }
+    .cal-day-cnt {
+      font-size: 8px;
+      margin-top: 2px;
+      opacity: 0.9;
+    }
+
+    /* Daily Logs List with Notes/Diary */
+    .log-group {
+      margin-bottom: 16px;
+    }
+    .log-date-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 6px 12px;
+      background: var(--primary-subtle);
+      border-radius: var(--radius-sm);
+      margin-bottom: 8px;
+      color: var(--primary-dark);
+    }
+    .log-item {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 12px 14px;
+      margin-bottom: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .log-item-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .log-time {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+    .log-count {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .log-breakdown {
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+    .log-notes-text {
+      font-size: 12px;
+      background: var(--primary-subtle);
+      padding: 6px 10px;
+      border-radius: var(--radius-sm);
+      color: var(--text-secondary);
+      border-left: 3px solid var(--primary);
+      font-style: italic;
+    }
+    .log-actions {
+      display: flex;
+      gap: 6px;
+    }
+    .btn-icon-small {
+      width: 32px;
+      height: 32px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--card-border);
+      background: var(--card-bg);
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    /* Modal System */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
+      z-index: 100;
+      align-items: flex-end;
+      justify-content: center;
+      animation: fadeIn 0.2s ease;
+    }
+    .modal-overlay.open {
+      display: flex;
+    }
+    .modal-sheet {
+      background: var(--card-bg);
+      border-top-left-radius: var(--radius-lg);
+      border-top-right-radius: var(--radius-lg);
+      width: 100%;
+      max-width: 600px;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 20px 18px calc(24px + var(--safe-bottom));
+      box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.25);
+      animation: slideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .modal-header h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    /* Bottom Navigation Bar */
+    .bottom-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--card-bg);
+      border-top: 1px solid var(--card-border);
+      padding: 8px 12px calc(8px + var(--safe-bottom));
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      z-index: 40;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.05);
+    }
+    .nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      padding: 6px 10px;
+      border-radius: var(--radius-md);
+      transition: all 0.2s ease;
+      min-width: 64px;
+      min-height: 48px;
+    }
+    .nav-item.active {
+      color: var(--primary);
+      background: var(--primary-subtle);
+      font-weight: 700;
+    }
+    .nav-icon {
+      font-size: 20px;
+    }
+    .nav-label {
+      font-size: 11px;
+    }
+
+    /* Empty State */
+    .empty-state {
+      text-align: center;
+      padding: 40px 16px;
+      color: var(--text-muted);
+    }
+    .empty-state-icon {
+      font-size: 48px;
+      margin-bottom: 12px;
+      opacity: 0.6;
+    }
+
+    /* Utility */
+    .text-center { text-align: center; }
+    .mt-2 { margin-top: 8px; }
+    .mt-4 { margin-top: 16px; }
+    .mb-2 { margin-bottom: 8px; }
+    .flex-between { display: flex; justify-content: space-between; align-items: center; }
+  </style>
+</head>
+<body>
+
+  <!-- Spiritual Top App Header -->
+  <header class="app-header">
+    <div class="header-top">
+      <div class="header-branding">
+        <div class="header-icon">📿</div>
+        <div class="header-title-box">
+          <h1>मंत्र साधना डायरी</h1>
+          <p>निश्चित २१ दिवस संकल्प व लवचिक नियोजन</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button class="icon-btn" id="shareBtn" title="व्हॉट्सॲपवर शेअर करा" aria-label="Share">
+          <span>📤</span>
+        </button>
+        <button class="icon-btn" id="headerSettingsBtn" title="सेटिंग्ज" aria-label="Settings">
+          <span>⚙️</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Sadhana Selector / Switcher -->
+    <div class="sadhana-bar">
+      <span>🚩</span>
+      <select id="sadhanaSelect" class="sadhana-select" aria-label="साधना निवडा"></select>
+      <button id="newSadhanaBtn" class="sadhana-add-btn">
+        <span>+ नवीन साधना</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main>
+
+    <!-- Completion Celebration Banner -->
+    <div id="celebrationBanner" class="celebration-banner">
+      <h3>🙏 संकल्प पूर्ण झाला!</h3>
+      <p id="celebrationText">अभिनंदन! आपली २१ दिवसांची मंत्र साधना यथायोग्य पूर्ण झाली आहे.</p>
+    </div>
+
+    <!-- Scheduled Reminder Alert Box -->
+    <div id="reminderBox" class="reminder-box" style="display: none;">
+      <span>⏰</span>
+      <div style="flex: 1;">
+        <strong>जपाची वेळ झाली आहे!</strong>
+        <p style="font-size: 11px; opacity: 0.85;">नियोजित साधना वेळेनुसार शांतचित्ताने जप सुरू करा.</p>
+      </div>
+      <button id="reminderChantBtn">जप करा</button>
+    </div>
+
+    <!-- =========================================================================
+         TAB 1: मुख्य माहिती (DASHBOARD)
+         ========================================================================= -->
+    <section id="tabDashboard" class="tab-view active">
+
+      <!-- Top Summary Card with Circular Progress Ring -->
+      <div class="card summary-card">
+        <div class="progress-hero">
+          <div class="ring-container">
+            <svg class="ring-svg" viewBox="0 0 120 120">
+              <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+              <circle id="progressRing" class="ring-bar" cx="60" cy="60" r="50"></circle>
+            </svg>
+            <div class="ring-text">
+              <div id="progressPercent" class="ring-pct">०%</div>
+              <div class="ring-label">प्रगती</div>
+            </div>
+          </div>
+
+          <div class="hero-info">
+            <div id="sadhanaTitleDisplay" class="sadhana-name-badge">
+              <span>🪔</span> <span id="dashSadhanaName">गायत्री मंत्र साधना</span>
+            </div>
+            <div class="stat-row">
+              <span>एकूण संकल्प:</span>
+              <span id="dashTotalTarget" class="val">१,२५,०००</span>
+            </div>
+            <div class="stat-row">
+              <span>पूर्ण झालेला जप:</span>
+              <span id="dashDoneTotal" class="val success-text">०</span>
+            </div>
+            <div class="stat-row">
+              <span>शिल्लक जप:</span>
+              <span id="dashRemainingTotal" class="val primary-text">१,२५,०००</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2-Column Metrics Grid (Strict Fixed 21-Day Duration + Dynamic Target Recalculation) -->
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <div class="label">चालू दिवस (निश्चित २१ दिवस)</div>
+            <div id="metricCurrentDay" class="val">दिवस १ / २१</div>
+            <div id="metricDateRange" class="sub">--</div>
+          </div>
+
+          <div class="metric-box">
+            <div class="label">उरलेले दिवस (समाप्तीपर्यंत)</div>
+            <div id="metricRemainingDays" class="val">२१ दिवस</div>
+            <div class="sub">२१ दिवसांचा निश्चित संकल्प</div>
+          </div>
+
+          <div class="metric-box">
+            <div class="label">नियोजित दैनिक लक्ष्य (आरंभीचे)</div>
+            <div id="metricPlannedDaily" class="val">५,९५३ जप</div>
+            <div id="metricPlannedDailyMalas" class="sub">(५५ माळा + १३ मणी)</div>
+          </div>
+
+          <div class="metric-box highlight">
+            <div class="label">आजपासून आवश्यक लक्ष्य (पुनर्मोजणी)</div>
+            <div id="metricRequiredDaily" class="val primary-text">५,९५३ जप</div>
+            <div id="metricRequiredDailyMalas" class="sub">(५५ माळा + १३ मणी)</div>
+          </div>
+
+          <div class="metric-box">
+            <div class="label">आज पूर्ण झालेला जप</div>
+            <div id="metricTodayDone" class="val success-text">० जप</div>
+            <div id="metricTodayDoneMalas" class="sub">(० माळा)</div>
+          </div>
+
+          <div class="metric-box">
+            <div class="label">आजचे उर्वरित लक्ष्य</div>
+            <div id="metricTodayRemaining" class="val">५,९५३ जप</div>
+            <div id="metricTodayRemainingMalas" class="sub">(५५ माळा + १३ मणी)</div>
+          </div>
+        </div>
+
+        <!-- Dynamic Quota Recalculation Notice -->
+        <div class="recalc-info-banner">
+          <span>💡</span>
+          <div>
+            <strong>लवचिक दैनिक उद्दिष्ट नियम:</strong> एकूण कालावधी २१ दिवस निश्चित आहे. एखादा दिवस जप चुकला तरी उरलेला जप उर्वरित दिवसांमध्ये समप्रमाणात विभागून आजचे आवश्यक लक्ष्य आपोआप निश्चित केले जाते.
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Action Buttons -->
+      <div class="action-row">
+        <button id="quickCountBtn" class="btn btn-primary">
+          <span>📿 डिजिटल जपमाळ</span>
+        </button>
+        <button id="quickLogBtn" class="btn btn-secondary">
+          <span>✍️ आजची नोंद / डायरी</span>
+        </button>
+      </div>
+
+      <!-- Secondary Metrics Card (Streak, Time, Speed) -->
+      <div class="card">
+        <div class="card-title">
+          <span>📊 साधना शिस्त व गती</span>
+          <span id="streakBadge" class="badge">🔥 सलग ० दिवस</span>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-box">
+            <div class="label">एकूण दिलेला वेळ</div>
+            <div id="metricTotalTime" class="val">० तास ० मि.</div>
+            <div class="sub">जप कालावधी</div>
+          </div>
+          <div class="metric-box">
+            <div class="label">सरासरी जप गती</div>
+            <div id="metricAvgSpeed" class="val">--</div>
+            <div class="sub">माळा प्रति तास</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spiritual Insight Quote -->
+      <div class="card" style="background: var(--primary-subtle); border: 1px dashed var(--primary-light);">
+        <p style="font-size: 13px; font-style: italic; color: var(--primary-dark); text-align: center;">
+          "जपात् सिद्धिः जपात् सिद्धिः जपात् सिद्धिर्न संशयः ।<br>
+          २१ दिवसांचे सातत्य हीच सिद्धीची खरी गुरुकिल्ली आहे."
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 2: डिजिटल जपमाळ (MALA COUNTER)
+         ========================================================================= -->
+    <section id="tabCounter" class="tab-view">
+      <div class="card counter-view">
+        <div class="counter-sadhana-title">
+          🚩 <span id="counterSadhanaLabel">साधनेसाठी जप</span>
+        </div>
+
+        <div class="counter-stats-bar">
+          <div class="counter-pill">
+            पूर्ण माळा: <span id="counterMalaCount">०</span>
+          </div>
+          <div class="counter-pill">
+            आजचा एकूण जप: <span id="counterTodayTotal">०</span>
+          </div>
+        </div>
+
+        <!-- Large Circular Bead Tap Area -->
+        <div class="counter-bead-ring" id="counterRingTap" role="button" aria-label="जप मणी मोजा">
+          <svg class="bead-ring-svg" viewBox="0 0 260 260">
+            <circle class="bead-ring-track" cx="130" cy="130" r="110"></circle>
+            <circle id="counterRingCircle" class="bead-ring-prog" cx="130" cy="130" r="110"></circle>
+          </svg>
+          <div class="counter-tap-area">
+            <div id="counterBeadCount" class="counter-bead-number">०</div>
+            <div class="counter-bead-label">/ १०८ मणी</div>
+          </div>
+        </div>
+
+        <!-- Auxiliary Counter Controls -->
+        <div class="counter-controls-row">
+          <button class="btn-circle" id="counterMinusBtn" title="एक मणी मागे" aria-label="वजा १">-१</button>
+          <button class="btn-circle" id="counterResetBtn" title="माळ रिसेट करा" aria-label="रिसेट">🔄</button>
+          <button class="btn-circle" id="counterPlus10Btn" title="+१० मणी" aria-label="+१०">+१०</button>
+          <button class="btn-circle" id="counterVibrateToggle" title="कंपन चालू/बंद" aria-label="Vibration">📳</button>
+        </div>
+
+        <!-- Commit Direct to Today's Log Button -->
+        <button id="commitCounterBtn" class="btn btn-success btn-block">
+          <span>💾 आजच्या नोंदीत जतन करा</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 3: दैनिक नोंदी व डायरी (DAILY LOGS & NOTES)
+         ========================================================================= -->
+    <section id="tabLogs" class="tab-view">
+      <div class="flex-between mb-2">
+        <h2 style="font-size: 17px; font-weight: 700; color: var(--primary);">दैनिक जप नोंदी व डायरी</h2>
+        <button id="openNewLogModalBtn" class="btn btn-primary" style="padding: 6px 14px; min-height: 38px; font-size: 13px;">
+          <span>+ नवीन नोंद</span>
+        </button>
+      </div>
+
+      <!-- Logs Grouped by Date (Newest First) -->
+      <div id="logsContainer">
+        <!-- Rendered dynamically -->
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 4: दिनदर्शिका (FIXED 21-DAY CALENDAR GRID)
+         ========================================================================= -->
+    <section id="tabCalendar" class="tab-view">
+      <div class="card">
+        <div class="card-title">
+          <span>📅 २१ दिवस साधना दिनदर्शिका</span>
+          <span class="badge badge-locked">🔒 कायम २१ दिवस</span>
+        </div>
+
+        <!-- Calendar Color Legend -->
+        <div class="calendar-legend">
+          <div class="legend-item"><span class="legend-dot dot-success"></span> पूर्ण</div>
+          <div class="legend-item"><span class="legend-dot dot-warning"></span> अपूर्ण</div>
+          <div class="legend-item"><span class="legend-dot dot-danger"></span> शून्य/चुकले</div>
+          <div class="legend-item"><span class="legend-dot dot-today"></span> आज</div>
+        </div>
+
+        <!-- Fixed 21-Day Calendar Grid (3 Rows of 7 Days) -->
+        <div id="calendarGrid" class="cal-grid">
+          <!-- Rendered dynamically for exactly 21 days -->
+        </div>
+      </div>
+
+      <!-- Selected Day Details Card -->
+      <div id="calDayDetailsCard" class="card" style="display: none;">
+        <div class="card-title">
+          <span id="calSelectedDateTitle">दिवसाचा तपशील</span>
+          <button id="closeCalDetailsBtn" class="btn-icon-small">✕</button>
+        </div>
+        <div id="calSelectedDayBody"></div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         TAB 5: सेटिंग्ज, बॅकअप व साधनेचे व्यवस्थापन
+         ========================================================================= -->
+    <section id="tabSettings" class="tab-view">
+      <!-- Sadhana Configuration Card -->
+      <div class="card">
+        <div class="card-title">
+          <span>⚙️ चालू साधना संपादन</span>
+          <button id="editCurrentSadhanaBtn" class="btn btn-secondary" style="padding: 4px 10px; min-height: 32px; font-size: 12px;">संपादित करा</button>
+        </div>
+        <div class="stat-row"><span>साधनेचे नाव:</span> <strong id="setSadhanaName">--</strong></div>
+        <div class="stat-row"><span>एकूण संकल्प संख्या:</span> <strong id="setSadhanaTarget">--</strong></div>
+        <div class="stat-row"><span>कालावधी:</span> <strong id="setSadhanaDates">-- (२१ दिवस निश्चित)</strong></div>
+        <div class="stat-row"><span>नियोजित वेळ:</span> <strong id="setSadhanaTime">--</strong></div>
+      </div>
+
+      <!-- Reminder & Notification Setting -->
+      <div class="card">
+        <div class="card-title">
+          <span>🔔 स्मरणपत्र (Reminders)</span>
+        </div>
+        <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;">
+          नियोजित जपाच्या वेळी डिव्हाइसवर स्मरणपत्र सूचना प्राप्त करा.
+        </p>
+        <button id="requestNotifyBtn" class="btn btn-secondary btn-block">
+          <span>🔔 स्मरणपत्र सूचना सुरू करा</span>
+        </button>
+      </div>
+
+      <!-- Backup, Restore & Reset -->
+      <div class="card">
+        <div class="card-title">
+          <span>💾 बॅकअप आणि पुनर्संचयित (Backup & Restore)</span>
+        </div>
+        <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 12px;">
+          आपल्या साधना नोंदी सुरक्षित ठेवण्यासाठी JSON बॅकअप फाइल डाउनलोड करा किंवा मागील बॅकअप लोड करा.
+        </p>
+        <div class="action-row">
+          <button id="exportBackupBtn" class="btn btn-secondary">
+            <span>📥 बॅकअप घ्या</span>
+          </button>
+          <button id="importBackupTriggerBtn" class="btn btn-secondary">
+            <span>📤 बॅकअप लोड करा</span>
+          </button>
+          <input type="file" id="backupFileInput" accept=".json" style="display: none;">
+        </div>
+        <button id="resetAppBtn" class="btn btn-outline btn-block mt-2" style="color: var(--danger); border-color: var(--danger-bg);">
+          <span>⚠️ ॲप डेटा रीसेट करा</span>
+        </button>
+      </div>
+
+      <!-- App Info -->
+      <div class="text-center mt-4">
+        <p style="font-size: 13px; font-weight: 700; color: var(--primary);">मंत्र साधना डायरी v1.1</p>
+        <p style="font-size: 11px; color: var(--text-muted);">निश्चित २१ दिवस संकल्प • १००% ऑफलाइन व सुरक्षित</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MODAL 1: दैनिक नोंद व डायरी (ADD/EDIT LOG & NOTES MODAL)
+       ========================================================================= -->
+  <div id="logModal" class="modal-overlay">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3 id="logModalTitle">दैनिक जप नोंद व डायरी</h3>
+        <button id="closeLogModalBtn" class="btn-icon-small">✕</button>
+      </div>
+
+      <form id="logForm">
+        <input type="hidden" id="logEditId">
+
+        <div class="form-group">
+          <label class="form-label" for="logDate">दिनांक (Date)</label>
+          <input type="date" id="logDate" class="input-field" required>
+        </div>
+
+        <div class="action-row">
+          <div class="form-group">
+            <label class="form-label" for="logStartTime">सुरू वेळ (Start)</label>
+            <div class="input-with-btn">
+              <input type="time" id="logStartTime" class="input-field">
+              <button type="button" class="btn-inline" id="setStartNowBtn">आत्ता</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="logEndTime">समाप्ती वेळ (End)</label>
+            <div class="input-with-btn">
+              <input type="time" id="logEndTime" class="input-field">
+              <button type="button" class="btn-inline" id="setEndNowBtn">आत्ता</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="action-row">
+          <div class="form-group">
+            <label class="form-label" for="logMalas">माळांची संख्या (१ माळ = १०८)</label>
+            <input type="number" id="logMalas" class="input-field" min="0" value="0" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="logExtraBeads">अतिरिक्त मणी (० ते १०७)</label>
+            <input type="number" id="logExtraBeads" class="input-field" min="0" max="107" value="0" required>
+          </div>
+        </div>
+
+        <!-- Live Mathematical Breakdown Preview -->
+        <div id="logMathPreview" class="math-preview">
+          = ० × १०८ + ० = ० जप
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="logSession">सत्र</label>
+          <select id="logSession" class="input-field">
+            <option value="सकाळ">सकाळचे सत्र</option>
+            <option value="दुपार">दुपारचे सत्र</option>
+            <option value="संध्याकाळ">संध्याकाळचे सत्र</option>
+            <option value="रात्र">रात्रीचे सत्र</option>
+            <option value="विशेष">विशेष अनुष्ठान</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="logNotes">साधना अनुभव / नोंदी (डायरी)</label>
+          <textarea id="logNotes" class="input-field" placeholder="आजच्या जपाच्या वेळी आलेले अनुभव, मनःस्थिती किंवा विशेष विचार येथे नोंदवा..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          <span id="logSubmitBtnText">नोंद जतन करा</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       MODAL 2: नवीन किंवा साधना संपादन (STRICT 21-DAY SADHANA CONFIG MODAL)
+       ========================================================================= -->
+  <div id="sadhanaModal" class="modal-overlay">
+    <div class="modal-sheet">
+      <div class="modal-header">
+        <h3 id="sadhanaModalTitle">नवीन साधना संकल्प (२१ दिवस)</h3>
+        <button id="closeSadhanaModalBtn" class="btn-icon-small">✕</button>
+      </div>
+
+      <form id="sadhanaForm">
+        <input type="hidden" id="sadhanaEditId">
+
+        <div class="form-group">
+          <label class="form-label" for="sadhanaName">साधनेचे नाव / मंत्र</label>
+          <input type="text" id="sadhanaName" class="input-field" placeholder="उदा. गायत्री मंत्र साधना, ओम नमः शिवाय" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="sadhanaTarget">एकूण संकल्प संख्या (Total Count)</label>
+          <input type="number" id="sadhanaTarget" class="input-field" value="125000" min="108" step="108" required>
+          <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
+            उदा. १,२५,००० (सव्वा लाख), ५१,००० किंवा २४,००० जप
+          </div>
+        </div>
+
+        <!-- Strict Fixed 21-Day Duration Inputs -->
+        <div class="action-row">
+          <div class="form-group">
+            <label class="form-label" for="sadhanaStartDate">प्रारंभ दिनांक</label>
+            <input type="date" id="sadhanaStartDate" class="input-field" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="sadhanaEndDate">समाप्ती दिनांक (कायम २१ दिवस)</label>
+            <input type="date" id="sadhanaEndDate" class="input-field" readonly title="कालावधी नेहमी निश्चित २१ दिवसांचा राहील">
+          </div>
+        </div>
+        <div style="font-size: 12px; color: var(--primary); font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 4px;">
+          <span>🔒</span> साधना कालावधी बरोबर २१ दिवस (३ आठवडे) निश्चित राहील.
+        </div>
+
+        <div class="action-row">
+          <div class="form-group">
+            <label class="form-label" for="sadhanaStartTime">नियोजित वेळ (सुरू)</label>
+            <input type="time" id="sadhanaStartTime" class="input-field" value="06:00">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="sadhanaEndTime">नियोजित वेळ (समाप्ती)</label>
+            <input type="time" id="sadhanaEndTime" class="input-field" value="07:30">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          <span>साधना संकल्प जतन करा</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       BOTTOM NAVIGATION BAR
+       ========================================================================= -->
+  <nav class="bottom-nav">
+    <button class="nav-item active" data-tab="tabDashboard">
+      <span class="nav-icon">📊</span>
+      <span class="nav-label">माहिती</span>
+    </button>
+    <button class="nav-item" data-tab="tabCounter">
+      <span class="nav-icon">📿</span>
+      <span class="nav-label">जपमाळ</span>
+    </button>
+    <button class="nav-item" data-tab="tabLogs">
+      <span class="nav-icon">📝</span>
+      <span class="nav-label">नोंदी/डायरी</span>
+    </button>
+    <button class="nav-item" data-tab="tabCalendar">
+      <span class="nav-icon">📅</span>
+      <span class="nav-label">२१ दिवस</span>
+    </button>
+    <button class="nav-item" data-tab="tabSettings">
+      <span class="nav-icon">⚙️</span>
+      <span class="nav-label">सेटिंग्ज</span>
+    </button>
+  </nav>
+
+  <!-- =========================================================================
+       JAVASCRIPT APPLICATION LOGIC
+       ========================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* --- Constant & Data Structures --- */
+      const STORAGE_KEY = 'mantra_sadhana_diary_v1';
+      const MALA_SIZE = 108;
+      const FIXED_SADHANA_DAYS = 21; // Rule 1: Strictly locked 21 days
+
+      // Devanagari conversion helpers
+      const MARATHI_DIGITS = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
+      function toDevanagari(num) {
+        if (num === null || num === undefined || isNaN(num)) return '०';
+        return num.toString().replace(/[0-9]/g, d => MARATHI_DIGITS[d]);
+      }
+      function formatCount(num) {
+        if (num === null || num === undefined || isNaN(num)) return '०';
+        const formatted = Number(num).toLocaleString('en-IN');
+        return toDevanagari(formatted);
+      }
+
+      function formatMalaBreakdown(totalBeads) {
+        const count = Number(totalBeads) || 0;
+        const malas = Math.floor(count / MALA_SIZE);
+        const beads = count % MALA_SIZE;
+        if (beads === 0) {
+          return `${formatCount(malas)} माळा (${formatCount(count)} जप)`;
+        }
+        return `${formatCount(malas)} माळा + ${formatCount(beads)} मणी (${formatCount(count)} जप)`;
+      }
+
+      function formatDateISO(date) {
+        const y = date.getFullYear();
+        const m = String(date.getMonth() + 1).padStart(2, '0');
+        const d = String(date.getDate()).padStart(2, '0');
+        return `${y}-${m}-${d}`;
+      }
+
+      function formatDisplayDate(isoStr) {
+        if (!isoStr) return '--';
+        const parts = isoStr.split('-');
+        if (parts.length !== 3) return isoStr;
+        return `${toDevanagari(parts[2])}/${toDevanagari(parts[1])}/${toDevanagari(parts[0])}`;
+      }
+
+      function parseISODate(isoStr) {
+        const [y, m, d] = isoStr.split('-').map(Number);
+        return new Date(y, m - 1, d);
+      }
+
+      // Calculate strictly 21-day inclusive end date (start date + 20 days)
+      function calculateStrict21DayEnd(startDateStr) {
+        const d = parseISODate(startDateStr);
+        d.setDate(d.getDate() + (FIXED_SADHANA_DAYS - 1));
+        return formatDateISO(d);
+      }
+
+      /* Audio Feedback: Synthesizes a pure Tibetan Singing Bowl / Brass Bell chime */
+      let audioCtx = null;
+      function playBellSound() {
+        try {
+          if (!audioCtx) {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+          }
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+          const now = audioCtx.currentTime;
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(528, now); // 528 Hz sacred Solfeggio frequency
+          osc.frequency.exponentialRampToValueAtTime(1056, now + 0.1);
+          osc.frequency.exponentialRampToValueAtTime(528, now + 1.2);
+
+          gain.gain.setValueAtTime(0.3, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 1.5);
+
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+
+          osc.start(now);
+          osc.stop(now + 1.5);
+        } catch (e) {
+          console.warn('Audio chime unavailable', e);
+        }
+      }
+
+      /* Vibration Feedback with Android Bridge Fallback */
+      function triggerVibrate(pattern) {
+        try {
+          if (window.AndroidBridge && typeof window.AndroidBridge.vibrate === 'function') {
+            window.AndroidBridge.vibrate(Array.isArray(pattern) ? pattern[0] : pattern);
+          } else if (navigator.vibrate) {
+            navigator.vibrate(pattern);
+          }
+        } catch (e) {
+          console.warn('Vibration not supported', e);
+        }
+      }
+
+      /* --- Initial State & Storage Layer --- */
+      function getDefaultState() {
+        const today = new Date();
+        const startIso = formatDateISO(today);
+        const endIso = calculateStrict21DayEnd(startIso);
+
+        const defaultSadhanaId = 'sadhana_' + Date.now();
+        return {
+          activeSadhanaId: defaultSadhanaId,
+          sadhanas: [
+            {
+              id: defaultSadhanaId,
+              name: 'गायत्री मंत्र साधना',
+              totalTarget: 125000,
+              startDate: startIso,
+              endDate: endIso, // Strictly 21 days
+              startTime: '06:00',
+              endTime: '07:30',
+              createdAt: Date.now()
+            }
+          ],
+          logs: [], // Array of { id, sadhanaId, date, startTime, endTime, malas, extraBeads, totalBeads, session, notes, createdAt }
+          counterState: {
+            mala: 0,
+            bead: 0,
+            vibrateEnabled: true
+          }
+        };
+      }
+
+      function loadState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (raw) {
+            const parsed = JSON.parse(raw);
+            if (parsed && Array.isArray(parsed.sadhanas) && parsed.sadhanas.length > 0) {
+              // Enforce strictly 21-day lock on all sadhanas loaded
+              parsed.sadhanas.forEach(s => {
+                s.endDate = calculateStrict21DayEnd(s.startDate);
+              });
+              return parsed;
+            }
+          }
+        } catch (e) {
+          console.error('LocalStorage load failed', e);
+        }
+        const def = getDefaultState();
+        saveState(def);
+        return def;
+      }
+
+      function saveState(state) {
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+        } catch (e) {
+          console.error('LocalStorage save failed', e);
+        }
+      }
+
+      let appState = loadState();
+
+      /* Active Sadhana Getter */
+      function getActiveSadhana() {
+        return appState.sadhanas.find(s => s.id === appState.activeSadhanaId) || appState.sadhanas[0];
+      }
+
+      function getSadhanaLogs(sadhanaId) {
+        return appState.logs.filter(l => l.sadhanaId === sadhanaId);
+      }
+
+      /* --- Mathematical & Discipline Engine (Rule 1 & Rule 2) --- */
+      function computeSadhanaMetrics(sadhana) {
+        const logs = getSadhanaLogs(sadhana.id);
+        const totalTarget = Number(sadhana.totalTarget) || 125000;
+
+        // Rule 1: Strictly fixed 21 days
+        const totalDays = FIXED_SADHANA_DAYS;
+
+        const start = parseISODate(sadhana.startDate);
+        const todayStr = formatDateISO(new Date());
+        const todayDate = parseISODate(todayStr);
+
+        // Day index in the 21-day timeline (0 = before start, 1..21 = active days, 22+ = past end)
+        const diffDays = Math.floor((todayDate - start) / (1000 * 60 * 60 * 24));
+        let currentDayNum;
+        let remainingDays;
+
+        if (diffDays < 0) {
+          currentDayNum = 1; // not started yet, first day pending
+          remainingDays = FIXED_SADHANA_DAYS; // all 21 days remain
+        } else if (diffDays < FIXED_SADHANA_DAYS) {
+          currentDayNum = diffDays + 1; // Day 1 to Day 21
+          remainingDays = FIXED_SADHANA_DAYS - diffDays; // remaining days including today (1 to 21)
+        } else {
+          currentDayNum = FIXED_SADHANA_DAYS; // Day 21 reached
+          remainingDays = 1; // final day for target reconciliation
+        }
+
+        // Total count logged across all days
+        const totalDone = logs.reduce((sum, l) => sum + (Number(l.totalBeads) || 0), 0);
+        const remainingTotal = Math.max(0, totalTarget - totalDone);
+        const progressPct = Math.min(100, Math.round((totalDone / totalTarget) * 100));
+
+        // Initial Planned daily target (Total / 21)
+        const plannedDaily = Math.ceil(totalTarget / FIXED_SADHANA_DAYS);
+
+        // Logs done strictly before today
+        const doneBeforeToday = logs
+          .filter(l => l.date < todayStr)
+          .reduce((sum, l) => sum + (Number(l.totalBeads) || 0), 0);
+
+        // Today's completed count
+        const todayLogs = logs.filter(l => l.date === todayStr);
+        const todayDone = todayLogs.reduce((sum, l) => sum + (Number(l.totalBeads) || 0), 0);
+
+        /* Rule 2: Dynamic Target Recalculation (Flexible Quota)
+           Formula: (Total Target - Done Before Today) / Remaining Days (including today)
+           This ensures user catches up without extending the locked 21-day timeline!
+        */
+        const remainingTargetFromToday = Math.max(0, totalTarget - doneBeforeToday);
+        const effRemainingDays = Math.max(1, remainingDays);
+        const requiredDaily = Math.ceil(remainingTargetFromToday / effRemainingDays);
+
+        const todayRemaining = Math.max(0, requiredDaily - todayDone);
+
+        // Time calculations & Chanting Speed
+        let totalMinutes = 0;
+        logs.forEach(l => {
+          if (l.startTime && l.endTime) {
+            const [sh, sm] = l.startTime.split(':').map(Number);
+            const [eh, em] = l.endTime.split(':').map(Number);
+            let diff = (eh * 60 + em) - (sh * 60 + sm);
+            if (diff < 0) diff += 1440; // Overnight handling
+            totalMinutes += diff;
+          }
+        });
+
+        const totalHours = Math.floor(totalMinutes / 60);
+        const remMins = totalMinutes % 60;
+        const totalMalasDone = totalDone / MALA_SIZE;
+        const avgSpeed = totalMinutes > 0 ? (totalMalasDone / (totalMinutes / 60)).toFixed(1) : null;
+
+        // Consecutive Days Streak calculation
+        const dateMap = {};
+        logs.forEach(l => {
+          dateMap[l.date] = (dateMap[l.date] || 0) + l.totalBeads;
+        });
+
+        let streak = 0;
+        let checkDate = new Date(todayDate);
+        while (checkDate >= start) {
+          const ds = formatDateISO(checkDate);
+          const count = dateMap[ds] || 0;
+          if (count >= plannedDaily * 0.75) {
+            streak++;
+          } else if (ds === todayStr && count === 0) {
+            // Today not logged yet, keep checking past days
+          } else {
+            break;
+          }
+          checkDate.setDate(checkDate.getDate() - 1);
+        }
+
+        return {
+          totalTarget,
+          totalDone,
+          remainingTotal,
+          progressPct,
+          totalDays,
+          currentDayNum,
+          remainingDays,
+          plannedDaily,
+          requiredDaily,
+          todayDone,
+          todayRemaining,
+          totalMinutes,
+          totalHours,
+          remMins,
+          avgSpeed,
+          streak,
+          isCompleted: totalDone >= totalTarget
+        };
+      }
+
+      /* --- UI Render Functions --- */
+      function renderHeaderSadhanaList() {
+        const select = document.getElementById('sadhanaSelect');
+        select.innerHTML = '';
+        appState.sadhanas.forEach(s => {
+          const opt = document.createElement('option');
+          opt.value = s.id;
+          opt.textContent = `${s.name} (२१ दिवस)`;
+          if (s.id === appState.activeSadhanaId) opt.selected = true;
+          select.appendChild(opt);
+        });
+      }
+
+      function renderDashboard() {
+        const sadhana = getActiveSadhana();
+        if (!sadhana) return;
+
+        // Ensure end date is strictly locked to 21 days
+        sadhana.endDate = calculateStrict21DayEnd(sadhana.startDate);
+        const metrics = computeSadhanaMetrics(sadhana);
+
+        // Header and names
+        document.getElementById('dashSadhanaName').textContent = sadhana.name;
+        document.getElementById('counterSadhanaLabel').textContent = sadhana.name;
+        document.getElementById('dashTotalTarget').textContent = formatCount(metrics.totalTarget);
+        document.getElementById('dashDoneTotal').textContent = formatCount(metrics.totalDone);
+        document.getElementById('dashRemainingTotal').textContent = formatCount(metrics.remainingTotal);
+
+        // Progress Ring
+        const ring = document.getElementById('progressRing');
+        const circumference = 2 * Math.PI * 50; // ~314
+        const offset = circumference - (metrics.progressPct / 100) * circumference;
+        ring.style.strokeDashoffset = offset;
+        document.getElementById('progressPercent').textContent = `${toDevanagari(metrics.progressPct)}%`;
+
+        // 2-Column Grid (Strict Fixed 21-Day Duration)
+        document.getElementById('metricCurrentDay').textContent = `दिवस ${toDevanagari(metrics.currentDayNum)} / २१`;
+        document.getElementById('metricDateRange').textContent = `${formatDisplayDate(sadhana.startDate)} ते ${formatDisplayDate(sadhana.endDate)}`;
+        document.getElementById('metricRemainingDays').textContent = `${toDevanagari(metrics.remainingDays)} दिवस`;
+
+        document.getElementById('metricPlannedDaily').textContent = `${formatCount(metrics.plannedDaily)} जप`;
+        document.getElementById('metricPlannedDailyMalas').textContent = `(${formatMalaBreakdown(metrics.plannedDaily)})`;
+
+        // Flexible Quota / Auto-recalculated required daily from today
+        document.getElementById('metricRequiredDaily').textContent = `${formatCount(metrics.requiredDaily)} जप`;
+        document.getElementById('metricRequiredDailyMalas').textContent = `(${formatMalaBreakdown(metrics.requiredDaily)})`;
+
+        document.getElementById('metricTodayDone').textContent = `${formatCount(metrics.todayDone)} जप`;
+        document.getElementById('metricTodayDoneMalas').textContent = `(${formatMalaBreakdown(metrics.todayDone)})`;
+
+        document.getElementById('metricTodayRemaining').textContent = `${formatCount(metrics.todayRemaining)} जप`;
+        document.getElementById('metricTodayRemainingMalas').textContent = `(${formatMalaBreakdown(metrics.todayRemaining)})`;
+
+        // Streak, Time, Speed
+        document.getElementById('streakBadge').textContent = `🔥 सलग ${toDevanagari(metrics.streak)} दिवस`;
+        document.getElementById('metricTotalTime').textContent = `${toDevanagari(metrics.totalHours)} तास ${toDevanagari(metrics.remMins)} मि.`;
+        document.getElementById('metricAvgSpeed').textContent = metrics.avgSpeed ? `${toDevanagari(metrics.avgSpeed)} माळा/तास` : '--';
+
+        // Completion Banner
+        const celebBanner = document.getElementById('celebrationBanner');
+        if (metrics.isCompleted) {
+          celebBanner.style.display = 'block';
+          document.getElementById('celebrationText').textContent = `अभिनंदन! ${sadhana.name} चा २१ दिवसांचा ${formatCount(metrics.totalTarget)} जप संकल्प यशस्वीरीत्या पूर्ण झाला!`;
+        } else {
+          celebBanner.style.display = 'none';
+        }
+
+        // Check scheduled reminder time banner
+        checkScheduledReminderTime(sadhana);
+      }
+
+      function checkScheduledReminderTime(sadhana) {
+        if (!sadhana.startTime) return;
+        const now = new Date();
+        const curHM = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+        const box = document.getElementById('reminderBox');
+        if (curHM >= sadhana.startTime && curHM <= (sadhana.endTime || sadhana.startTime)) {
+          box.style.display = 'flex';
+        } else {
+          box.style.display = 'none';
+        }
+      }
+
+      /* --- Counter Screen Rendering --- */
+      function renderCounter() {
+        const c = appState.counterState || { mala: 0, bead: 0, vibrateEnabled: true };
+        document.getElementById('counterBeadCount').textContent = toDevanagari(c.bead);
+        document.getElementById('counterMalaCount').textContent = toDevanagari(c.mala);
+
+        const circle = document.getElementById('counterRingCircle');
+        const circumference = 2 * Math.PI * 110; // ~691
+        const offset = circumference - (c.bead / MALA_SIZE) * circumference;
+        circle.style.strokeDashoffset = offset;
+
+        // Today's total logged + counter progress
+        const sadhana = getActiveSadhana();
+        const todayStr = formatDateISO(new Date());
+        const todayLogged = getSadhanaLogs(sadhana.id)
+          .filter(l => l.date === todayStr)
+          .reduce((sum, l) => sum + (Number(l.totalBeads) || 0), 0);
+        const liveToday = todayLogged + (c.mala * MALA_SIZE + c.bead);
+        document.getElementById('counterTodayTotal').textContent = `${formatCount(liveToday)} जप`;
+
+        const vibBtn = document.getElementById('counterVibrateToggle');
+        vibBtn.style.color = c.vibrateEnabled ? 'var(--primary)' : 'var(--text-muted)';
+      }
+
+      function incrementCounter() {
+        const c = appState.counterState;
+        c.bead++;
+
+        if (c.vibrateEnabled) {
+          triggerVibrate(35);
+        }
+
+        if (c.bead >= MALA_SIZE) {
+          c.bead = 0;
+          c.mala++;
+          if (c.vibrateEnabled) {
+            triggerVibrate([80, 50, 120]);
+          }
+          playBellSound();
+        }
+
+        saveState(appState);
+        renderCounter();
+      }
+
+      /* --- Logs Screen Rendering (with Notes & Diary) --- */
+      function renderLogs() {
+        const sadhana = getActiveSadhana();
+        const container = document.getElementById('logsContainer');
+        const logs = getSadhanaLogs(sadhana.id);
+
+        if (logs.length === 0) {
+          container.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">📿</div>
+              <p>अद्याप कोणतीही नोंद आढळली नाही.</p>
+              <p style="font-size: 12px; margin-top: 4px;">वर दिलेल्या "+ नवीन नोंद" बटनावर क्लिक करून २१ दिवस साधनेची नोंद करा.</p>
+            </div>
+          `;
+          return;
+        }
+
+        // Group by Date (Newest date first)
+        const groups = {};
+        logs.forEach(l => {
+          if (!groups[l.date]) groups[l.date] = [];
+          groups[l.date].push(l);
+        });
+
+        const sortedDates = Object.keys(groups).sort((a, b) => b.localeCompare(a));
+
+        let html = '';
+        sortedDates.forEach(date => {
+          const dayLogs = groups[date];
+          const dayTotalBeads = dayLogs.reduce((s, x) => s + (Number(x.totalBeads) || 0), 0);
+          const dayTotalMalas = (dayTotalBeads / MALA_SIZE).toFixed(1);
+
+          html += `
+            <div class="log-group">
+              <div class="log-date-header">
+                <span>📅 ${formatDisplayDate(date)}</span>
+                <span>दैनिक एकूण: ${formatCount(dayTotalBeads)} जप (${toDevanagari(dayTotalMalas)} माळा)</span>
+              </div>
+          `;
+
+          dayLogs.forEach(l => {
+            const timeStr = (l.startTime && l.endTime) ? `${l.startTime} ते ${l.endTime}` : (l.session || 'जप सत्र');
+            html += `
+              <div class="log-item">
+                <div class="log-item-top">
+                  <div>
+                    <div class="log-time">⏰ ${timeStr}</div>
+                    <div class="log-count">${formatCount(l.totalBeads)} जप</div>
+                    <div class="log-breakdown">= ${formatMalaBreakdown(l.totalBeads)}</div>
+                  </div>
+                  <div class="log-actions">
+                    <button class="btn-icon-small edit-log-btn" data-id="${l.id}" title="संपादित करा">✏️</button>
+                    <button class="btn-icon-small delete-log-btn" data-id="${l.id}" title="हटवा" style="color: var(--danger);">🗑️</button>
+                  </div>
+                </div>
+                ${l.notes ? `<div class="log-notes-text">📝 डायरी: ${escapeHTML(l.notes)}</div>` : ''}
+              </div>
+            `;
+          });
+
+          html += `</div>`;
+        });
+
+        container.innerHTML = html;
+
+        // Attach event listeners to edit and delete buttons
+        container.querySelectorAll('.edit-log-btn').forEach(btn => {
+          btn.addEventListener('click', () => openEditLogModal(btn.dataset.id));
+        });
+        container.querySelectorAll('.delete-log-btn').forEach(btn => {
+          btn.addEventListener('click', () => deleteLogEntry(btn.dataset.id));
+        });
+      }
+
+      function escapeHTML(str) {
+        if (!str) return '';
+        return str.replace(/[&<>'"]/g, tag => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          "'": '&#39;',
+          '"': '&quot;'
+        }[tag] || tag));
+      }
+
+      /* --- Calendar Screen Rendering (Rule 1: Fixed Exactly 21 Days) --- */
+      function renderCalendar() {
+        const sadhana = getActiveSadhana();
+        const grid = document.getElementById('calendarGrid');
+        const logs = getSadhanaLogs(sadhana.id);
+
+        const start = parseISODate(sadhana.startDate);
+        const todayStr = formatDateISO(new Date());
+
+        const plannedDaily = Math.ceil(Number(sadhana.totalTarget) / FIXED_SADHANA_DAYS);
+
+        // Daily sums map
+        const daySums = {};
+        logs.forEach(l => {
+          daySums[l.date] = (daySums[l.date] || 0) + Number(l.totalBeads);
+        });
+
+        let html = '';
+        let curr = new Date(start);
+
+        // Render EXACTLY 21 days (Day 1 through Day 21)
+        for (let dayIdx = 1; dayIdx <= FIXED_SADHANA_DAYS; dayIdx++) {
+          const ds = formatDateISO(curr);
+          const done = daySums[ds] || 0;
+          const isToday = ds === todayStr;
+          const isPast = ds < todayStr;
+          const isFuture = ds > todayStr;
+
+          let statusClass = '';
+          if (done >= plannedDaily) {
+            statusClass = 'status-complete';
+          } else if (done > 0) {
+            statusClass = 'status-partial';
+          } else if (isPast) {
+            statusClass = 'status-missed';
+          }
+
+          if (isToday) statusClass += ' is-today';
+          if (isFuture && done === 0) statusClass += ' is-future';
+
+          html += `
+            <div class="cal-day ${statusClass}" data-date="${ds}" data-daynum="${dayIdx}">
+              <div class="cal-day-num">${toDevanagari(dayIdx)}</div>
+              <div class="cal-day-cnt">${done > 0 ? toDevanagari(Math.floor(done / MALA_SIZE)) + ' म.' : '-'}</div>
+            </div>
+          `;
+
+          curr.setDate(curr.getDate() + 1);
+        }
+
+        grid.innerHTML = html;
+
+        grid.querySelectorAll('.cal-day').forEach(el => {
+          el.addEventListener('click', () => {
+            showCalendarDayDetails(el.dataset.date, el.dataset.daynum);
+          });
+        });
+      }
+
+      function showCalendarDayDetails(dateStr, dayNum) {
+        const sadhana = getActiveSadhana();
+        const logs = getSadhanaLogs(sadhana.id).filter(l => l.date === dateStr);
+        const total = logs.reduce((s, l) => s + Number(l.totalBeads), 0);
+
+        const card = document.getElementById('calDayDetailsCard');
+        const title = document.getElementById('calSelectedDateTitle');
+        const body = document.getElementById('calSelectedDayBody');
+
+        title.textContent = `दिवस ${toDevanagari(dayNum)} / २१ (${formatDisplayDate(dateStr)})`;
+
+        let content = `
+          <div class="stat-row">
+            <span>एकूण जप:</span>
+            <strong>${formatCount(total)} (${formatMalaBreakdown(total)})</strong>
+          </div>
+        `;
+
+        if (logs.length > 0) {
+          content += '<div class="mt-2" style="font-size: 13px;"><strong>सत्रांची माहिती व डायरी:</strong></div>';
+          logs.forEach(l => {
+            content += `
+              <div style="font-size: 12px; margin-top: 6px; padding: 8px; background: var(--bg); border-radius: 8px; border: 1px solid var(--card-border);">
+                <div><strong>${l.session || 'जप'}</strong> (${l.startTime || '--'} ते ${l.endTime || '--'}): ${formatCount(l.totalBeads)} जप</div>
+                ${l.notes ? `<div style="font-style: italic; color: var(--text-secondary); margin-top: 4px;">📝 ${escapeHTML(l.notes)}</div>` : ''}
+              </div>
+            `;
+          });
+        } else {
+          content += '<p style="font-size: 12px; color: var(--text-muted); margin-top: 6px;">या दिवशी कोणतीही नोंद आढळली नाही.</p>';
+        }
+
+        content += `
+          <button id="addLogForDateBtn" class="btn btn-secondary btn-block mt-2" style="font-size: 13px; min-height: 40px;">
+            + या दिवसासाठी नोंद / डायरी करा
+          </button>
+        `;
+
+        body.innerHTML = content;
+        card.style.display = 'block';
+
+        document.getElementById('addLogForDateBtn').addEventListener('click', () => {
+          openNewLogModal(dateStr);
+        });
+      }
+
+      /* --- Settings Screen Rendering --- */
+      function renderSettings() {
+        const sadhana = getActiveSadhana();
+        if (!sadhana) return;
+
+        document.getElementById('setSadhanaName').textContent = sadhana.name;
+        document.getElementById('setSadhanaTarget').textContent = formatCount(sadhana.totalTarget) + ' जप';
+        document.getElementById('setSadhanaDates').textContent = `${formatDisplayDate(sadhana.startDate)} ते ${formatDisplayDate(sadhana.endDate)} (२१ दिवस निश्चित)`;
+        document.getElementById('setSadhanaTime').textContent = `${sadhana.startTime || '--'} ते ${sadhana.endTime || '--'}`;
+      }
+
+      /* --- Tab Navigation System --- */
+      const tabs = document.querySelectorAll('.bottom-nav .nav-item');
+      const views = document.querySelectorAll('.tab-view');
+
+      function switchTab(tabId) {
+        tabs.forEach(t => {
+          if (t.dataset.tab === tabId) t.classList.add('active');
+          else t.classList.remove('active');
+        });
+        views.forEach(v => {
+          if (v.id === tabId) v.classList.add('active');
+          else v.classList.remove('active');
+        });
+
+        if (tabId === 'tabDashboard') renderDashboard();
+        if (tabId === 'tabCounter') renderCounter();
+        if (tabId === 'tabLogs') renderLogs();
+        if (tabId === 'tabCalendar') renderCalendar();
+        if (tabId === 'tabSettings') renderSettings();
+      }
+
+      tabs.forEach(btn => {
+        btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+      });
+
+      document.getElementById('quickCountBtn').addEventListener('click', () => switchTab('tabCounter'));
+      document.getElementById('quickLogBtn').addEventListener('click', () => openNewLogModal());
+      document.getElementById('reminderChantBtn').addEventListener('click', () => switchTab('tabCounter'));
+      document.getElementById('headerSettingsBtn').addEventListener('click', () => switchTab('tabSettings'));
+
+      /* --- Log Modal Operations (with Notes / Diary) --- */
+      const logModal = document.getElementById('logModal');
+      const logForm = document.getElementById('logForm');
+      const logMalasInput = document.getElementById('logMalas');
+      const logExtraBeadsInput = document.getElementById('logExtraBeads');
+      const logMathPreview = document.getElementById('logMathPreview');
+      const logNotesInput = document.getElementById('logNotes');
+
+      function updateLogMathPreview() {
+        const m = Math.max(0, parseInt(logMalasInput.value) || 0);
+        const b = Math.max(0, parseInt(logExtraBeadsInput.value) || 0);
+        const total = m * MALA_SIZE + b;
+        logMathPreview.textContent = `= ${toDevanagari(m)} × १०८ + ${toDevanagari(b)} = ${formatCount(total)} जप`;
+      }
+
+      logMalasInput.addEventListener('input', updateLogMathPreview);
+      logExtraBeadsInput.addEventListener('input', updateLogMathPreview);
+
+      function openNewLogModal(defaultDate) {
+        document.getElementById('logModalTitle').textContent = 'नवीन जप नोंद व डायरी';
+        document.getElementById('logSubmitBtnText').textContent = 'नोंद जतन करा';
+        document.getElementById('logEditId').value = '';
+
+        const todayStr = defaultDate || formatDateISO(new Date());
+        document.getElementById('logDate').value = todayStr;
+
+        const sadhana = getActiveSadhana();
+        document.getElementById('logStartTime').value = sadhana.startTime || '06:00';
+        document.getElementById('logEndTime').value = sadhana.endTime || '07:30';
+        logMalasInput.value = '1';
+        logExtraBeadsInput.value = '0';
+        logNotesInput.value = '';
+        updateLogMathPreview();
+
+        logModal.classList.add('open');
+      }
+
+      function openEditLogModal(logId) {
+        const log = appState.logs.find(l => l.id === logId);
+        if (!log) return;
+
+        document.getElementById('logModalTitle').textContent = 'जप नोंद व डायरी संपादन';
+        document.getElementById('logSubmitBtnText').textContent = 'बदल जतन करा';
+        document.getElementById('logEditId').value = log.id;
+        document.getElementById('logDate').value = log.date;
+        document.getElementById('logStartTime').value = log.startTime || '';
+        document.getElementById('logEndTime').value = log.endTime || '';
+        logMalasInput.value = log.malas || 0;
+        logExtraBeadsInput.value = log.extraBeads || 0;
+        document.getElementById('logSession').value = log.session || 'सकाळ';
+        logNotesInput.value = log.notes || '';
+        updateLogMathPreview();
+
+        logModal.classList.add('open');
+      }
+
+      document.getElementById('closeLogModalBtn').addEventListener('click', () => logModal.classList.remove('open'));
+      document.getElementById('openNewLogModalBtn').addEventListener('click', () => openNewLogModal());
+
+      document.getElementById('setStartNowBtn').addEventListener('click', () => {
+        const now = new Date();
+        document.getElementById('logStartTime').value = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+      });
+      document.getElementById('setEndNowBtn').addEventListener('click', () => {
+        const now = new Date();
+        document.getElementById('logEndTime').value = String(now.getHours()).padStart(2, '0') + ':' + String(now.getMinutes()).padStart(2, '0');
+      });
+
+      logForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const editId = document.getElementById('logEditId').value;
+        const date = document.getElementById('logDate').value;
+        const startTime = document.getElementById('logStartTime').value;
+        const endTime = document.getElementById('logEndTime').value;
+        const malas = Math.max(0, parseInt(logMalasInput.value) || 0);
+        const extraBeads = Math.max(0, parseInt(logExtraBeadsInput.value) || 0);
+        const totalBeads = malas * MALA_SIZE + extraBeads;
+        const session = document.getElementById('logSession').value;
+        const notes = logNotesInput.value.trim();
+
+        if (totalBeads <= 0) {
+          alert('कृपया किमान १ मणी किंवा माळेची नोंद करा.');
+          return;
+        }
+
+        const sadhana = getActiveSadhana();
+
+        if (editId) {
+          const idx = appState.logs.findIndex(l => l.id === editId);
+          if (idx !== -1) {
+            appState.logs[idx] = {
+              ...appState.logs[idx],
+              date,
+              startTime,
+              endTime,
+              malas,
+              extraBeads,
+              totalBeads,
+              session,
+              notes
+            };
+          }
+        } else {
+          appState.logs.push({
+            id: 'log_' + Date.now(),
+            sadhanaId: sadhana.id,
+            date,
+            startTime,
+            endTime,
+            malas,
+            extraBeads,
+            totalBeads,
+            session,
+            notes,
+            createdAt: Date.now()
+          });
+        }
+
+        saveState(appState);
+        logModal.classList.remove('open');
+        renderDashboard();
+        renderLogs();
+        renderCalendar();
+      });
+
+      function deleteLogEntry(logId) {
+        if (confirm('आपण ही नोंद नक्की हटवू इच्छिता?')) {
+          appState.logs = appState.logs.filter(l => l.id !== logId);
+          saveState(appState);
+          renderDashboard();
+          renderLogs();
+          renderCalendar();
+        }
+      }
+
+      /* --- Counter Commit Direct to Today's Log --- */
+      document.getElementById('commitCounterBtn').addEventListener('click', () => {
+        const c = appState.counterState;
+        const totalBeads = c.mala * MALA_SIZE + c.bead;
+
+        if (totalBeads === 0) {
+          alert('अद्याप कोणताही जप मोजला गेला नाही!');
+          return;
+        }
+
+        const msg = `आजच्या नोंदीमध्ये ${formatCount(c.mala)} माळा आणि ${formatCount(c.bead)} मणी (${formatCount(totalBeads)} जप) जतन करायचे आहेत का?`;
+        if (confirm(msg)) {
+          const sadhana = getActiveSadhana();
+          const todayStr = formatDateISO(new Date());
+
+          appState.logs.push({
+            id: 'log_' + Date.now(),
+            sadhanaId: sadhana.id,
+            date: todayStr,
+            startTime: '',
+            endTime: '',
+            malas: c.mala,
+            extraBeads: c.bead,
+            totalBeads: totalBeads,
+            session: 'डिजिटल जपमाळ',
+            notes: 'डिजिटल जपमाळ द्वारे जप पूर्ण',
+            createdAt: Date.now()
+          });
+
+          // Reset counter beads
+          c.mala = 0;
+          c.bead = 0;
+          saveState(appState);
+
+          renderCounter();
+          renderDashboard();
+          renderLogs();
+          alert('🙏 जप यशस्वीरीत्या जतन केला गेला!');
+          switchTab('tabLogs');
+        }
+      });
+
+      /* --- Counter Controls --- */
+      document.getElementById('counterRingTap').addEventListener('click', incrementCounter);
+
+      document.getElementById('counterMinusBtn').addEventListener('click', () => {
+        const c = appState.counterState;
+        if (c.bead > 0) {
+          c.bead--;
+        } else if (c.mala > 0) {
+          c.mala--;
+          c.bead = MALA_SIZE - 1;
+        }
+        saveState(appState);
+        renderCounter();
+      });
+
+      document.getElementById('counterResetBtn').addEventListener('click', () => {
+        if (confirm('सध्या मोजलेले मणी रिसेट करायचे आहेत का?')) {
+          appState.counterState.bead = 0;
+          appState.counterState.mala = 0;
+          saveState(appState);
+          renderCounter();
+        }
+      });
+
+      document.getElementById('counterPlus10Btn').addEventListener('click', () => {
+        const c = appState.counterState;
+        c.bead += 10;
+        while (c.bead >= MALA_SIZE) {
+          c.bead -= MALA_SIZE;
+          c.mala++;
+          playBellSound();
+        }
+        if (c.vibrateEnabled) triggerVibrate(50);
+        saveState(appState);
+        renderCounter();
+      });
+
+      document.getElementById('counterVibrateToggle').addEventListener('click', () => {
+        appState.counterState.vibrateEnabled = !appState.counterState.vibrateEnabled;
+        saveState(appState);
+        renderCounter();
+      });
+
+      /* --- Sadhana Management & Modal (Rule 1: Fixed 21 Days) --- */
+      const sadhanaModal = document.getElementById('sadhanaModal');
+      const sadhanaForm = document.getElementById('sadhanaForm');
+
+      document.getElementById('newSadhanaBtn').addEventListener('click', () => {
+        document.getElementById('sadhanaModalTitle').textContent = 'नवीन साधना संकल्प (२१ दिवस)';
+        document.getElementById('sadhanaEditId').value = '';
+        document.getElementById('sadhanaName').value = '';
+        document.getElementById('sadhanaTarget').value = '125000';
+
+        const today = new Date();
+        const startIso = formatDateISO(today);
+        document.getElementById('sadhanaStartDate').value = startIso;
+        document.getElementById('sadhanaEndDate').value = calculateStrict21DayEnd(startIso);
+        document.getElementById('sadhanaStartTime').value = '06:00';
+        document.getElementById('sadhanaEndTime').value = '07:30';
+
+        sadhanaModal.classList.add('open');
+      });
+
+      document.getElementById('editCurrentSadhanaBtn').addEventListener('click', () => {
+        const s = getActiveSadhana();
+        if (!s) return;
+
+        document.getElementById('sadhanaModalTitle').textContent = 'साधना संपादन करा (२१ दिवस निश्चित)';
+        document.getElementById('sadhanaEditId').value = s.id;
+        document.getElementById('sadhanaName').value = s.name;
+        document.getElementById('sadhanaTarget').value = s.totalTarget;
+        document.getElementById('sadhanaStartDate').value = s.startDate;
+        document.getElementById('sadhanaEndDate').value = calculateStrict21DayEnd(s.startDate);
+        document.getElementById('sadhanaStartTime').value = s.startTime || '06:00';
+        document.getElementById('sadhanaEndTime').value = s.endTime || '07:30';
+
+        sadhanaModal.classList.add('open');
+      });
+
+      // Strictly lock end date to start date + 20 days (21 days total)
+      document.getElementById('sadhanaStartDate').addEventListener('change', function () {
+        if (this.value) {
+          document.getElementById('sadhanaEndDate').value = calculateStrict21DayEnd(this.value);
+        }
+      });
+
+      document.getElementById('closeSadhanaModalBtn').addEventListener('click', () => sadhanaModal.classList.remove('open'));
+
+      sadhanaForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const editId = document.getElementById('sadhanaEditId').value;
+        const name = document.getElementById('sadhanaName').value.trim();
+        const totalTarget = parseInt(document.getElementById('sadhanaTarget').value) || 125000;
+        const startDate = document.getElementById('sadhanaStartDate').value;
+        // Strictly enforced 21 days
+        const endDate = calculateStrict21DayEnd(startDate);
+        const startTime = document.getElementById('sadhanaStartTime').value;
+        const endTime = document.getElementById('sadhanaEndTime').value;
+
+        if (editId) {
+          const idx = appState.sadhanas.findIndex(s => s.id === editId);
+          if (idx !== -1) {
+            appState.sadhanas[idx] = {
+              ...appState.sadhanas[idx],
+              name,
+              totalTarget,
+              startDate,
+              endDate,
+              startTime,
+              endTime
+            };
+          }
+        } else {
+          const newId = 'sadhana_' + Date.now();
+          appState.sadhanas.push({
+            id: newId,
+            name,
+            totalTarget,
+            startDate,
+            endDate,
+            startTime,
+            endTime,
+            createdAt: Date.now()
+          });
+          appState.activeSadhanaId = newId;
+        }
+
+        saveState(appState);
+        sadhanaModal.classList.remove('open');
+        renderHeaderSadhanaList();
+        renderDashboard();
+        renderSettings();
+      });
+
+      document.getElementById('sadhanaSelect').addEventListener('change', function () {
+        appState.activeSadhanaId = this.value;
+        saveState(appState);
+        renderDashboard();
+        renderLogs();
+        renderCalendar();
+        renderSettings();
+      });
+
+      document.getElementById('closeCalDetailsBtn').addEventListener('click', () => {
+        document.getElementById('calDayDetailsCard').style.display = 'none';
+      });
+
+      /* --- WhatsApp Sharing (Explicit 21-Day Format) --- */
+      document.getElementById('shareBtn').addEventListener('click', () => {
+        const s = getActiveSadhana();
+        const m = computeSadhanaMetrics(s);
+
+        const text =
+`🚩 *मंत्र साधना डायरी (२१ दिवस संकल्प)* 🚩
+साधना: *${s.name}*
+निश्चित कालावधी: २१ दिवस (${formatDisplayDate(s.startDate)} ते ${formatDisplayDate(s.endDate)})
+एकूण संकल्प: ${formatCount(m.totalTarget)} जप
+चालू दिवस: दिवस ${toDevanagari(m.currentDayNum)} / २१ (${toDevanagari(m.remainingDays)} दिवस शिल्लक)
+पूर्ण झालेला जप: ${formatCount(m.totalDone)} (${formatMalaBreakdown(m.totalDone)})
+प्रगती: ${toDevanagari(m.progressPct)}%
+आजचे आवश्यक लक्ष्य: ${formatCount(m.requiredDaily)} जप
+सलग साधना (Streak): ${toDevanagari(m.streak)} दिवस 🔥
+🙏 संकल्प सिद्धीस जावो!`;
+
+        const url = `https://wa.me/?text=${encodeURIComponent(text)}`;
+        window.open(url, '_blank');
+      });
+
+      /* --- Notification API Support --- */
+      document.getElementById('requestNotifyBtn').addEventListener('click', () => {
+        if (!('Notification' in window)) {
+          alert('या ब्राउझरमध्ये सूचना (Notification) समर्थन उपलब्ध नाही.');
+          return;
+        }
+        Notification.requestPermission().then(permission => {
+          if (permission === 'granted') {
+            alert('🔔 सूचना सुरू झाल्या आहेत! नियोजित वेळेस आपणास स्मरणपत्र येईल.');
+            new Notification('मंत्र साधना डायरी', {
+              body: 'साधना स्मरणपत्र सूचना सक्रिय केल्या आहेत. 🙏',
+              icon: 'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Ctext y=".9em" font-size="90"%3E📿%3C/text%3E%3C/svg%3E'
+            });
+          } else {
+            alert('सूचना परवानगी नाकारली गेली आहे.');
+          }
+        });
+      });
+
+      /* --- Backup Export, Import & Reset --- */
+      document.getElementById('exportBackupBtn').addEventListener('click', () => {
+        const json = JSON.stringify(appState, null, 2);
+        const blob = new Blob([json], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        const todayStr = formatDateISO(new Date());
+        a.href = url;
+        a.download = `mantra_sadhana_backup_${todayStr}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+
+      const backupInput = document.getElementById('backupFileInput');
+      document.getElementById('importBackupTriggerBtn').addEventListener('click', () => backupInput.click());
+
+      backupInput.addEventListener('change', function (e) {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function (evt) {
+          try {
+            const data = JSON.parse(evt.target.result);
+            if (data && Array.isArray(data.sadhanas)) {
+              if (confirm('बॅकअप लोड केल्यास सध्याचा डेटा बदलला जाईल. पुढे जायचे का?')) {
+                // Ensure strictly 21-day lock on restored data
+                data.sadhanas.forEach(s => {
+                  s.endDate = calculateStrict21DayEnd(s.startDate);
+                });
+                appState = data;
+                saveState(appState);
+                renderHeaderSadhanaList();
+                renderDashboard();
+                renderLogs();
+                renderCalendar();
+                renderSettings();
+                alert('बॅकअप यशस्वीरीत्या पुनर्संचयित (Restore) झाला!');
+              }
+            } else {
+              alert('अवैध बॅकअप फाइल.');
+            }
+          } catch (err) {
+            alert('बॅकअप फाइल वाचताना त्रुटी: ' + err.message);
+          }
+        };
+        reader.readAsText(file);
+      });
+
+      document.getElementById('resetAppBtn').addEventListener('click', () => {
+        if (confirm('⚠️ सावधान: ॲपचा सर्व डेटा आणि नोंदी कायमच्या हटवल्या जातील! आपण नक्की रीसेट करू इच्छिता?')) {
+          localStorage.removeItem(STORAGE_KEY);
+          appState = getDefaultState();
+          saveState(appState);
+          renderHeaderSadhanaList();
+          renderDashboard();
+          renderLogs();
+          renderCalendar();
+          renderSettings();
+          alert('ॲप डेटा रीसेट केला गेला आहे.');
+        }
+      });
+
+      /* --- Service Worker Registration for Complete Offline PWA Usability --- */
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          const swCode = `
+            const CACHE_NAME = 'mantra-sadhana-v2';
+            self.addEventListener('install', (e) => {
+              self.skipWaiting();
+            });
+            self.addEventListener('activate', (e) => {
+              e.waitUntil(self.clients.claim());
+            });
+            self.addEventListener('fetch', (e) => {
+              e.respondWith(
+                caches.match(e.request).then(resp => resp || fetch(e.request).catch(() => caches.match('.')))
+              );
+            });
+          `;
+          try {
+            const blob = new Blob([swCode], { type: 'application/javascript' });
+            const swUrl = URL.createObjectURL(blob);
+            navigator.serviceWorker.register(swUrl).catch(() => {});
+          } catch (e) {
+            // Blob SW fallback
+          }
+        });
+      }
+
+      /* --- Initial Boot --- */
+      renderHeaderSadhanaList();
+      renderDashboard();
+      renderCounter();
+
+    })();
+  </script>
+</body>
+</html>

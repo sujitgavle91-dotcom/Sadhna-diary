@@ -1,0 +1,6 @@
+{
+  "name": "Mantra Sadhana Diary",
+  "description": "मंत्र साधना डायरी - जपाचे अचूक नियोजन, लवचिक ट्रॅकिंग, डिजिटल जपमाळ आणि प्रगती अहवाल",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
