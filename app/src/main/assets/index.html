@@ -7,7 +7,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="मंत्र साधना">
-  <title>मंत्र साधना डायरी | Mantra Sadhana Diary (२१ दिवस संकल्प)</title>
+  <title>मंत्र साधना डायरी | Mantra Sadhana Diary</title>
 
   <!-- PWA Manifest Data URI -->
   <link rel="manifest" href="data:application/manifest+json,%7B%22name%22%3A%22%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%B8%E0%A4%BE%E0%A4%A7%E0%A4%A8%E0%A4%BE%20%E0%A4%A1%E0%A4%BE%E0%A4%AF%E0%A4%B0%E0%A5%80%22%2C%22short_name%22%3A%22%E0%A4%AE%E0%A4%82%E0%A4%A4%E0%A5%8D%E0%A4%B0%20%E0%A4%B8%E0%A4%BE%E0%A4%A7%E0%A4%A8%E0%A4%BE%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23FFFBF5%22%2C%22theme_color%22%3A%22%23E65100%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data:image/svg+xml,%3Csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20viewBox=%270%200%20512%20512%27%3E%3Crect%20width=%27512%27%20height=%27512%27%20rx=%27128%27%20fill=%27%23E65100%27/%3E%3Ccircle%20cx=%27256%27%20cy=%27256%27%20r=%27160%27%20fill=%27none%27%20stroke=%27%23FFD54F%27%20stroke-width=%2724%27%20stroke-dasharray=%278%2020%27/%3E%3Cpath%20d=%27M256%20170c-25%200-45%2020-45%2045%200%2018%2011%2034%2027%2041-19%207-33%2026-33%2048%200%2029%2023%2052%2051%2052s51-23%2051-52c0-22-14-41-33-48%2016-7%2027-23%2027-41%200-25-20-45-45-45z%27%20fill=%27%23FFF%27/%3E%3C/svg%3E%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image/svg+xml%22%7D%5D%7D">
@@ -973,7 +973,7 @@
         <div class="header-icon">📿</div>
         <div class="header-title-box">
           <h1>मंत्र साधना डायरी</h1>
-          <p>निश्चित २१ दिवस संकल्प व लवचिक नियोजन</p>
+          <p>नित्य जप संकल्प व लवचिक नियोजन</p>
         </div>
       </div>
       <div class="header-actions">
@@ -1002,7 +1002,7 @@
     <!-- Completion Celebration Banner -->
     <div id="celebrationBanner" class="celebration-banner">
       <h3>🙏 संकल्प पूर्ण झाला!</h3>
-      <p id="celebrationText">अभिनंदन! आपली २१ दिवसांची मंत्र साधना यथायोग्य पूर्ण झाली आहे.</p>
+      <p id="celebrationText">अभिनंदन! आपली मंत्र साधना यथायोग्य पूर्ण झाली आहे.</p>
     </div>
 
     <!-- Scheduled Reminder Alert Box -->
@@ -1053,50 +1053,36 @@
           </div>
         </div>
 
-        <!-- 2-Column Metrics Grid (Strict Fixed 21-Day Duration + Dynamic Target Recalculation) -->
+        <!-- 2-Column Metrics Grid -->
         <div class="metrics-grid">
           <div class="metric-box">
-            <div class="label">चालू दिवस (निश्चित २१ दिवस)</div>
+            <div class="label">चालू दिवस</div>
             <div id="metricCurrentDay" class="val">दिवस १ / २१</div>
-            <div id="metricDateRange" class="sub">--</div>
           </div>
 
           <div class="metric-box">
-            <div class="label">उरलेले दिवस (समाप्तीपर्यंत)</div>
+            <div class="label">उरलेले दिवस</div>
             <div id="metricRemainingDays" class="val">२१ दिवस</div>
-            <div class="sub">२१ दिवसांचा निश्चित संकल्प</div>
           </div>
 
           <div class="metric-box">
-            <div class="label">नियोजित दैनिक लक्ष्य (आरंभीचे)</div>
+            <div class="label">नियोजित दैनिक लक्ष्य</div>
             <div id="metricPlannedDaily" class="val">५,९५३ जप</div>
-            <div id="metricPlannedDailyMalas" class="sub">(५५ माळा + १३ मणी)</div>
           </div>
 
           <div class="metric-box highlight">
-            <div class="label">आजपासून आवश्यक लक्ष्य (पुनर्मोजणी)</div>
+            <div class="label">आजपासून आवश्यक लक्ष्य</div>
             <div id="metricRequiredDaily" class="val primary-text">५,९५३ जप</div>
-            <div id="metricRequiredDailyMalas" class="sub">(५५ माळा + १३ मणी)</div>
           </div>
 
           <div class="metric-box">
             <div class="label">आज पूर्ण झालेला जप</div>
             <div id="metricTodayDone" class="val success-text">० जप</div>
-            <div id="metricTodayDoneMalas" class="sub">(० माळा)</div>
           </div>
 
           <div class="metric-box">
             <div class="label">आजचे उर्वरित लक्ष्य</div>
             <div id="metricTodayRemaining" class="val">५,९५३ जप</div>
-            <div id="metricTodayRemainingMalas" class="sub">(५५ माळा + १३ मणी)</div>
-          </div>
-        </div>
-
-        <!-- Dynamic Quota Recalculation Notice -->
-        <div class="recalc-info-banner">
-          <span>💡</span>
-          <div>
-            <strong>लवचिक दैनिक उद्दिष्ट नियम:</strong> एकूण कालावधी २१ दिवस निश्चित आहे. एखादा दिवस जप चुकला तरी उरलेला जप उर्वरित दिवसांमध्ये समप्रमाणात विभागून आजचे आवश्यक लक्ष्य आपोआप निश्चित केले जाते.
           </div>
         </div>
       </div>
@@ -1121,12 +1107,10 @@
           <div class="metric-box">
             <div class="label">एकूण दिलेला वेळ</div>
             <div id="metricTotalTime" class="val">० तास ० मि.</div>
-            <div class="sub">जप कालावधी</div>
           </div>
           <div class="metric-box">
             <div class="label">सरासरी जप गती</div>
             <div id="metricAvgSpeed" class="val">--</div>
-            <div class="sub">माळा प्रति तास</div>
           </div>
         </div>
       </div>
@@ -1135,7 +1119,7 @@
       <div class="card" style="background: var(--primary-subtle); border: 1px dashed var(--primary-light);">
         <p style="font-size: 13px; font-style: italic; color: var(--primary-dark); text-align: center;">
           "जपात् सिद्धिः जपात् सिद्धिः जपात् सिद्धिर्न संशयः ।<br>
-          २१ दिवसांचे सातत्य हीच सिद्धीची खरी गुरुकिल्ली आहे."
+          नियमित व एकाग्रतेने केलेला जप संकल्प निश्चितच फलद्रूप होतो."
         </p>
       </div>
     </section>
@@ -1203,13 +1187,13 @@
     </section>
 
     <!-- =========================================================================
-         TAB 4: दिनदर्शिका (FIXED 21-DAY CALENDAR GRID)
+         TAB 4: दिनदर्शिका (CUSTOM DURATION CALENDAR GRID)
          ========================================================================= -->
     <section id="tabCalendar" class="tab-view">
       <div class="card">
         <div class="card-title">
-          <span>📅 २१ दिवस साधना दिनदर्शिका</span>
-          <span class="badge badge-locked">🔒 कायम २१ दिवस</span>
+          <span>📅 साधना दिनदर्शिका</span>
+          <span id="calendarSadhanaDays" class="badge">२१ दिवस</span>
         </div>
 
         <!-- Calendar Color Legend -->
@@ -1220,9 +1204,9 @@
           <div class="legend-item"><span class="legend-dot dot-today"></span> आज</div>
         </div>
 
-        <!-- Fixed 21-Day Calendar Grid (3 Rows of 7 Days) -->
+        <!-- Dynamic Calendar Grid -->
         <div id="calendarGrid" class="cal-grid">
-          <!-- Rendered dynamically for exactly 21 days -->
+          <!-- Rendered dynamically for selected date range -->
         </div>
       </div>
 
@@ -1248,7 +1232,7 @@
         </div>
         <div class="stat-row"><span>साधनेचे नाव:</span> <strong id="setSadhanaName">--</strong></div>
         <div class="stat-row"><span>एकूण संकल्प संख्या:</span> <strong id="setSadhanaTarget">--</strong></div>
-        <div class="stat-row"><span>कालावधी:</span> <strong id="setSadhanaDates">-- (२१ दिवस निश्चित)</strong></div>
+        <div class="stat-row"><span>कालावधी:</span> <strong id="setSadhanaDates">--</strong></div>
         <div class="stat-row"><span>नियोजित वेळ:</span> <strong id="setSadhanaTime">--</strong></div>
       </div>
 
@@ -1289,8 +1273,8 @@
 
       <!-- App Info -->
       <div class="text-center mt-4">
-        <p style="font-size: 13px; font-weight: 700; color: var(--primary);">मंत्र साधना डायरी v1.1</p>
-        <p style="font-size: 11px; color: var(--text-muted);">निश्चित २१ दिवस संकल्प • १००% ऑफलाइन व सुरक्षित</p>
+        <p style="font-size: 13px; font-weight: 700; color: var(--primary);">मंत्र साधना डायरी v1.2</p>
+        <p style="font-size: 11px; color: var(--text-muted);">१००% ऑफलाइन व सुरक्षित • स्थानिक साठवणूक (LocalStorage)</p>
       </div>
     </section>
 
@@ -1371,12 +1355,12 @@
   </div>
 
   <!-- =========================================================================
-       MODAL 2: नवीन किंवा साधना संपादन (STRICT 21-DAY SADHANA CONFIG MODAL)
+       MODAL 2: नवीन किंवा साधना संपादन (FLEXIBLE CUSTOM DATE SADHANA MODAL)
        ========================================================================= -->
   <div id="sadhanaModal" class="modal-overlay">
     <div class="modal-sheet">
       <div class="modal-header">
-        <h3 id="sadhanaModalTitle">नवीन साधना संकल्प (२१ दिवस)</h3>
+        <h3 id="sadhanaModalTitle">नवीन साधना संकल्प</h3>
         <button id="closeSadhanaModalBtn" class="btn-icon-small">✕</button>
       </div>
 
@@ -1388,27 +1372,31 @@
           <input type="text" id="sadhanaName" class="input-field" placeholder="उदा. गायत्री मंत्र साधना, ओम नमः शिवाय" required>
         </div>
 
-        <div class="form-group">
-          <label class="form-label" for="sadhanaTarget">एकूण संकल्प संख्या (Total Count)</label>
-          <input type="number" id="sadhanaTarget" class="input-field" value="125000" min="1" step="any" required>
-          <div style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">
-            उदा. १,२५,००० (सव्वा लाख), ५१,००० किंवा २४,००० जप
+        <div class="action-row">
+          <div class="form-group">
+            <label class="form-label" for="sadhanaTarget">एकूण संकल्प संख्या (Total Count)</label>
+            <input type="number" inputmode="numeric" id="sadhanaTarget" class="input-field" value="125000" min="1" step="any" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="sadhanaDays">कालावधी (दिवस)</label>
+            <input type="number" inputmode="numeric" id="sadhanaDays" class="input-field" value="21" min="1" step="1" required>
           </div>
         </div>
 
-        <!-- Strict Fixed 21-Day Duration Inputs -->
+        <!-- Custom Start and End Date Inputs -->
         <div class="action-row">
           <div class="form-group">
-            <label class="form-label" for="sadhanaStartDate">प्रारंभ दिनांक</label>
+            <label class="form-label" for="sadhanaStartDate">प्रारंभ दिनांक (Start Date)</label>
             <input type="date" id="sadhanaStartDate" class="input-field" required>
           </div>
           <div class="form-group">
-            <label class="form-label" for="sadhanaEndDate">समाप्ती दिनांक (कायम २१ दिवस)</label>
-            <input type="date" id="sadhanaEndDate" class="input-field" readonly title="कालावधी नेहमी निश्चित २१ दिवसांचा राहील">
+            <label class="form-label" for="sadhanaEndDate">समाप्ती दिनांक (End Date)</label>
+            <input type="date" id="sadhanaEndDate" class="input-field" required>
           </div>
         </div>
-        <div style="font-size: 12px; color: var(--primary); font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 4px;">
-          <span>🔒</span> साधना कालावधी बरोबर २१ दिवस (३ आठवडे) निश्चित राहील.
+
+        <div id="sadhanaPlanPreview" class="math-preview">
+          कालावधी: २१ दिवस • नियोजित दैनिक लक्ष्य: ५,९५३ जप
         </div>
 
         <div class="action-row">
@@ -1447,7 +1435,7 @@
     </button>
     <button class="nav-item" data-tab="tabCalendar">
       <span class="nav-icon">📅</span>
-      <span class="nav-label">२१ दिवस</span>
+      <span class="nav-label">दिनदर्शिका</span>
     </button>
     <button class="nav-item" data-tab="tabSettings">
       <span class="nav-icon">⚙️</span>
@@ -1465,7 +1453,7 @@
       /* --- Constant & Data Structures --- */
       const STORAGE_KEY = 'mantra_sadhana_diary_v1';
       const MALA_SIZE = 108;
-      const FIXED_SADHANA_DAYS = 21; // Rule 1: Strictly locked 21 days
+      const DEFAULT_SADHANA_DAYS = 21;
 
       // Devanagari conversion helpers
       const MARATHI_DIGITS = ['०', '१', '२', '३', '४', '५', '६', '७', '८', '९'];
@@ -1473,9 +1461,26 @@
         if (num === null || num === undefined || isNaN(num)) return '०';
         return num.toString().replace(/[0-9]/g, d => MARATHI_DIGITS[d]);
       }
+      function toAsciiDigits(val) {
+        if (val === null || val === undefined) return '';
+        let str = String(val);
+        MARATHI_DIGITS.forEach((d, idx) => {
+          str = str.split(d).join(String(idx));
+        });
+        return str;
+      }
+      function parseNumericInput(val) {
+        if (typeof val === 'number') {
+          return Number.isFinite(val) ? Math.floor(val) : 0;
+        }
+        const cleaned = toAsciiDigits(val).replace(/[^0-9.-]/g, '');
+        const parsed = parseFloat(cleaned);
+        return Number.isFinite(parsed) ? Math.floor(parsed) : 0;
+      }
       function formatCount(num) {
-        if (num === null || num === undefined || isNaN(num)) return '०';
-        const formatted = Number(num).toLocaleString('en-IN');
+        const n = Number(num);
+        if (num === null || num === undefined || !Number.isFinite(n)) return '०';
+        const formatted = Math.round(n).toLocaleString('en-IN');
         return toDevanagari(formatted);
       }
 
@@ -1496,6 +1501,10 @@
         return `${y}-${m}-${d}`;
       }
 
+      function isValidISODate(isoStr) {
+        return typeof isoStr === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(isoStr);
+      }
+
       function formatDisplayDate(isoStr) {
         if (!isoStr) return '--';
         const parts = isoStr.split('-');
@@ -1504,15 +1513,25 @@
       }
 
       function parseISODate(isoStr) {
+        if (!isValidISODate(isoStr)) return new Date();
         const [y, m, d] = isoStr.split('-').map(Number);
         return new Date(y, m - 1, d);
       }
 
-      // Calculate strictly 21-day inclusive end date (start date + 20 days)
-      function calculateStrict21DayEnd(startDateStr) {
-        const d = parseISODate(startDateStr);
-        d.setDate(d.getDate() + (FIXED_SADHANA_DAYS - 1));
+      function toUTCDateMs(isoStr) {
+        const [y, m, d] = isoStr.split('-').map(Number);
+        return Date.UTC(y, m - 1, d);
+      }
+
+      function addDaysISO(isoStr, daysToAdd) {
+        const d = parseISODate(isoStr);
+        d.setDate(d.getDate() + daysToAdd);
         return formatDateISO(d);
+      }
+
+      function diffDaysISO(startIso, endIso) {
+        if (!isValidISODate(startIso) || !isValidISODate(endIso)) return 0;
+        return Math.round((toUTCDateMs(endIso) - toUTCDateMs(startIso)) / 86400000);
       }
 
       /* Audio Feedback: Synthesizes a pure Tibetan Singing Bowl / Brass Bell chime */
@@ -1562,9 +1581,8 @@
 
       /* --- Initial State & Storage Layer --- */
       function getDefaultState() {
-        const today = new Date();
-        const startIso = formatDateISO(today);
-        const endIso = calculateStrict21DayEnd(startIso);
+        const startIso = formatDateISO(new Date());
+        const endIso = addDaysISO(startIso, DEFAULT_SADHANA_DAYS - 1);
 
         const defaultSadhanaId = 'sadhana_' + Date.now();
         return {
@@ -1575,7 +1593,7 @@
               name: 'गायत्री मंत्र साधना',
               totalTarget: 125000,
               startDate: startIso,
-              endDate: endIso, // Strictly 21 days
+              endDate: endIso,
               startTime: '06:00',
               endTime: '07:30',
               createdAt: Date.now()
@@ -1590,17 +1608,64 @@
         };
       }
 
+      function sanitizeState(parsed) {
+        if (!parsed || !Array.isArray(parsed.sadhanas) || parsed.sadhanas.length === 0) {
+          return getDefaultState();
+        }
+        const todayIso = formatDateISO(new Date());
+        parsed.sadhanas = parsed.sadhanas.map((s, idx) => {
+          const startDate = isValidISODate(s.startDate) ? s.startDate : todayIso;
+          let endDate = isValidISODate(s.endDate) ? s.endDate : addDaysISO(startDate, DEFAULT_SADHANA_DAYS - 1);
+          if (diffDaysISO(startDate, endDate) < 0) {
+            endDate = startDate;
+          }
+          const parsedTarget = parseNumericInput(s.totalTarget);
+          return {
+            ...s,
+            id: s.id || ('sadhana_' + Date.now() + '_' + idx),
+            name: (s.name && String(s.name).trim()) || 'मंत्र साधना',
+            totalTarget: parsedTarget > 0 ? parsedTarget : 125000,
+            startDate,
+            endDate,
+            startTime: s.startTime || '06:00',
+            endTime: s.endTime || '07:30'
+          };
+        });
+
+        if (!parsed.sadhanas.some(s => s.id === parsed.activeSadhanaId)) {
+          parsed.activeSadhanaId = parsed.sadhanas[0].id;
+        }
+
+        if (!Array.isArray(parsed.logs)) parsed.logs = [];
+        parsed.logs = parsed.logs.map((l, idx) => {
+          const malas = Math.max(0, parseNumericInput(l.malas));
+          const extraBeads = Math.max(0, parseNumericInput(l.extraBeads));
+          const computedBeads = malas * MALA_SIZE + extraBeads;
+          const totalBeads = parseNumericInput(l.totalBeads) || computedBeads;
+          return {
+            ...l,
+            id: l.id || ('log_' + Date.now() + '_' + idx),
+            sadhanaId: l.sadhanaId || parsed.activeSadhanaId,
+            date: isValidISODate(l.date) ? l.date : todayIso,
+            malas,
+            extraBeads,
+            totalBeads: Math.max(0, totalBeads)
+          };
+        });
+
+        if (!parsed.counterState || typeof parsed.counterState !== 'object') {
+          parsed.counterState = { mala: 0, bead: 0, vibrateEnabled: true };
+        }
+        return parsed;
+      }
+
       function loadState() {
         try {
           const raw = localStorage.getItem(STORAGE_KEY);
           if (raw) {
             const parsed = JSON.parse(raw);
             if (parsed && Array.isArray(parsed.sadhanas) && parsed.sadhanas.length > 0) {
-              // Enforce strictly 21-day lock on all sadhanas loaded
-              parsed.sadhanas.forEach(s => {
-                s.endDate = calculateStrict21DayEnd(s.startDate);
-              });
-              return parsed;
+              return sanitizeState(parsed);
             }
           }
         } catch (e) {
@@ -1630,41 +1695,44 @@
         return appState.logs.filter(l => l.sadhanaId === sadhanaId);
       }
 
-      /* --- Mathematical & Discipline Engine (Rule 1 & Rule 2) --- */
+      /* --- Mathematical & Discipline Engine (Custom Date Range + Dynamic Recalculation) --- */
       function computeSadhanaMetrics(sadhana) {
         const logs = getSadhanaLogs(sadhana.id);
-        const totalTarget = Number(sadhana.totalTarget) || 125000;
+        const rawTarget = parseNumericInput(sadhana.totalTarget);
+        const totalTarget = rawTarget > 0 ? rawTarget : 125000;
 
-        // Rule 1: Strictly fixed 21 days
-        const totalDays = FIXED_SADHANA_DAYS;
-
-        const start = parseISODate(sadhana.startDate);
         const todayStr = formatDateISO(new Date());
-        const todayDate = parseISODate(todayStr);
+        const startDate = isValidISODate(sadhana.startDate) ? sadhana.startDate : todayStr;
+        const endDate = (isValidISODate(sadhana.endDate) && diffDaysISO(startDate, sadhana.endDate) >= 0)
+          ? sadhana.endDate
+          : startDate;
 
-        // Day index in the 21-day timeline (0 = before start, 1..21 = active days, 22+ = past end)
-        const diffDays = Math.floor((todayDate - start) / (1000 * 60 * 60 * 24));
+        // Dynamic duration based on selected custom start & end dates (inclusive)
+        const totalDays = Math.max(1, diffDaysISO(startDate, endDate) + 1);
+
+        // Day index in the custom timeline
+        const diffDays = diffDaysISO(startDate, todayStr);
         let currentDayNum;
         let remainingDays;
 
         if (diffDays < 0) {
-          currentDayNum = 1; // not started yet, first day pending
-          remainingDays = FIXED_SADHANA_DAYS; // all 21 days remain
-        } else if (diffDays < FIXED_SADHANA_DAYS) {
-          currentDayNum = diffDays + 1; // Day 1 to Day 21
-          remainingDays = FIXED_SADHANA_DAYS - diffDays; // remaining days including today (1 to 21)
+          currentDayNum = 1; // Sadhana hasn't started yet
+          remainingDays = totalDays;
+        } else if (diffDays < totalDays) {
+          currentDayNum = diffDays + 1;
+          remainingDays = totalDays - diffDays; // Including today
         } else {
-          currentDayNum = FIXED_SADHANA_DAYS; // Day 21 reached
-          remainingDays = 1; // final day for target reconciliation
+          currentDayNum = totalDays;
+          remainingDays = 0;
         }
 
         // Total count logged across all days
         const totalDone = logs.reduce((sum, l) => sum + (Number(l.totalBeads) || 0), 0);
         const remainingTotal = Math.max(0, totalTarget - totalDone);
-        const progressPct = Math.min(100, Math.round((totalDone / totalTarget) * 100));
+        const progressPct = totalTarget > 0 ? Math.min(100, Math.round((totalDone / totalTarget) * 100)) : 0;
 
-        // Initial Planned daily target (Total / 21)
-        const plannedDaily = Math.ceil(totalTarget / FIXED_SADHANA_DAYS);
+        // Initial Planned daily target (Total / Total Days)
+        const plannedDaily = Math.ceil(totalTarget / totalDays);
 
         // Logs done strictly before today
         const doneBeforeToday = logs
@@ -1675,9 +1743,8 @@
         const todayLogs = logs.filter(l => l.date === todayStr);
         const todayDone = todayLogs.reduce((sum, l) => sum + (Number(l.totalBeads) || 0), 0);
 
-        /* Rule 2: Dynamic Target Recalculation (Flexible Quota)
+        /* Dynamic Target Recalculation (Flexible Quota)
            Formula: (Total Target - Done Before Today) / Remaining Days (including today)
-           This ensures user catches up without extending the locked 21-day timeline!
         */
         const remainingTargetFromToday = Math.max(0, totalTarget - doneBeforeToday);
         const effRemainingDays = Math.max(1, remainingDays);
@@ -1705,11 +1772,12 @@
         // Consecutive Days Streak calculation
         const dateMap = {};
         logs.forEach(l => {
-          dateMap[l.date] = (dateMap[l.date] || 0) + l.totalBeads;
+          dateMap[l.date] = (dateMap[l.date] || 0) + (Number(l.totalBeads) || 0);
         });
 
         let streak = 0;
-        let checkDate = new Date(todayDate);
+        const start = parseISODate(startDate);
+        let checkDate = parseISODate(todayStr);
         while (checkDate >= start) {
           const ds = formatDateISO(checkDate);
           const count = dateMap[ds] || 0;
@@ -1749,9 +1817,10 @@
         const select = document.getElementById('sadhanaSelect');
         select.innerHTML = '';
         appState.sadhanas.forEach(s => {
+          const days = Math.max(1, diffDaysISO(s.startDate, s.endDate) + 1);
           const opt = document.createElement('option');
           opt.value = s.id;
-          opt.textContent = `${s.name} (२१ दिवस)`;
+          opt.textContent = `${s.name} (${toDevanagari(days)} दिवस)`;
           if (s.id === appState.activeSadhanaId) opt.selected = true;
           select.appendChild(opt);
         });
@@ -1761,8 +1830,6 @@
         const sadhana = getActiveSadhana();
         if (!sadhana) return;
 
-        // Ensure end date is strictly locked to 21 days
-        sadhana.endDate = calculateStrict21DayEnd(sadhana.startDate);
         const metrics = computeSadhanaMetrics(sadhana);
 
         // Header and names
@@ -1779,23 +1846,13 @@
         ring.style.strokeDashoffset = offset;
         document.getElementById('progressPercent').textContent = `${toDevanagari(metrics.progressPct)}%`;
 
-        // 2-Column Grid (Strict Fixed 21-Day Duration)
-        document.getElementById('metricCurrentDay').textContent = `दिवस ${toDevanagari(metrics.currentDayNum)} / २१`;
-        document.getElementById('metricDateRange').textContent = `${formatDisplayDate(sadhana.startDate)} ते ${formatDisplayDate(sadhana.endDate)}`;
+        // 2-Column Grid (Clean primary numbers only)
+        document.getElementById('metricCurrentDay').textContent = `दिवस ${toDevanagari(metrics.currentDayNum)} / ${toDevanagari(metrics.totalDays)}`;
         document.getElementById('metricRemainingDays').textContent = `${toDevanagari(metrics.remainingDays)} दिवस`;
-
         document.getElementById('metricPlannedDaily').textContent = `${formatCount(metrics.plannedDaily)} जप`;
-        document.getElementById('metricPlannedDailyMalas').textContent = `(${formatMalaBreakdown(metrics.plannedDaily)})`;
-
-        // Flexible Quota / Auto-recalculated required daily from today
         document.getElementById('metricRequiredDaily').textContent = `${formatCount(metrics.requiredDaily)} जप`;
-        document.getElementById('metricRequiredDailyMalas').textContent = `(${formatMalaBreakdown(metrics.requiredDaily)})`;
-
         document.getElementById('metricTodayDone').textContent = `${formatCount(metrics.todayDone)} जप`;
-        document.getElementById('metricTodayDoneMalas').textContent = `(${formatMalaBreakdown(metrics.todayDone)})`;
-
         document.getElementById('metricTodayRemaining').textContent = `${formatCount(metrics.todayRemaining)} जप`;
-        document.getElementById('metricTodayRemainingMalas').textContent = `(${formatMalaBreakdown(metrics.todayRemaining)})`;
 
         // Streak, Time, Speed
         document.getElementById('streakBadge').textContent = `🔥 सलग ${toDevanagari(metrics.streak)} दिवस`;
@@ -1806,7 +1863,7 @@
         const celebBanner = document.getElementById('celebrationBanner');
         if (metrics.isCompleted) {
           celebBanner.style.display = 'block';
-          document.getElementById('celebrationText').textContent = `अभिनंदन! ${sadhana.name} चा २१ दिवसांचा ${formatCount(metrics.totalTarget)} जप संकल्प यशस्वीरीत्या पूर्ण झाला!`;
+          document.getElementById('celebrationText').textContent = `अभिनंदन! ${sadhana.name} चा ${toDevanagari(metrics.totalDays)} दिवसांचा ${formatCount(metrics.totalTarget)} जप संकल्प यशस्वीरीत्या पूर्ण झाला!`;
         } else {
           celebBanner.style.display = 'none';
         }
@@ -1883,7 +1940,7 @@
             <div class="empty-state">
               <div class="empty-state-icon">📿</div>
               <p>अद्याप कोणतीही नोंद आढळली नाही.</p>
-              <p style="font-size: 12px; margin-top: 4px;">वर दिलेल्या "+ नवीन नोंद" बटनावर क्लिक करून २१ दिवस साधनेची नोंद करा.</p>
+              <p style="font-size: 12px; margin-top: 4px;">वर दिलेल्या "+ नवीन नोंद" बटनावर क्लिक करून साधनेची नोंद करा.</p>
             </div>
           `;
           return;
@@ -1957,7 +2014,7 @@
         }[tag] || tag));
       }
 
-      /* --- Calendar Screen Rendering (Rule 1: Fixed Exactly 21 Days) --- */
+      /* --- Calendar Screen Rendering (Custom Duration) --- */
       function renderCalendar() {
         const sadhana = getActiveSadhana();
         const grid = document.getElementById('calendarGrid');
@@ -1966,19 +2023,21 @@
         const start = parseISODate(sadhana.startDate);
         const todayStr = formatDateISO(new Date());
 
-        const plannedDaily = Math.ceil(Number(sadhana.totalTarget) / FIXED_SADHANA_DAYS);
+        const totalDays = Math.max(1, diffDaysISO(sadhana.startDate, sadhana.endDate) + 1);
+        document.getElementById('calendarSadhanaDays').textContent = `${toDevanagari(totalDays)} दिवस`;
+
+        const plannedDaily = Math.ceil(parseNumericInput(sadhana.totalTarget) / totalDays);
 
         // Daily sums map
         const daySums = {};
         logs.forEach(l => {
-          daySums[l.date] = (daySums[l.date] || 0) + Number(l.totalBeads);
+          daySums[l.date] = (daySums[l.date] || 0) + (Number(l.totalBeads) || 0);
         });
 
         let html = '';
         let curr = new Date(start);
 
-        // Render EXACTLY 21 days (Day 1 through Day 21)
-        for (let dayIdx = 1; dayIdx <= FIXED_SADHANA_DAYS; dayIdx++) {
+        for (let dayIdx = 1; dayIdx <= totalDays; dayIdx++) {
           const ds = formatDateISO(curr);
           const done = daySums[ds] || 0;
           const isToday = ds === todayStr;
@@ -2011,21 +2070,22 @@
 
         grid.querySelectorAll('.cal-day').forEach(el => {
           el.addEventListener('click', () => {
-            showCalendarDayDetails(el.dataset.date, el.dataset.daynum);
+            showCalendarDayDetails(el.dataset.date, el.dataset.daynum, totalDays);
           });
         });
       }
 
-      function showCalendarDayDetails(dateStr, dayNum) {
+      function showCalendarDayDetails(dateStr, dayNum, totalDays) {
         const sadhana = getActiveSadhana();
+        const resolvedTotalDays = totalDays || Math.max(1, diffDaysISO(sadhana.startDate, sadhana.endDate) + 1);
         const logs = getSadhanaLogs(sadhana.id).filter(l => l.date === dateStr);
-        const total = logs.reduce((s, l) => s + Number(l.totalBeads), 0);
+        const total = logs.reduce((s, l) => s + (Number(l.totalBeads) || 0), 0);
 
         const card = document.getElementById('calDayDetailsCard');
         const title = document.getElementById('calSelectedDateTitle');
         const body = document.getElementById('calSelectedDayBody');
 
-        title.textContent = `दिवस ${toDevanagari(dayNum)} / २१ (${formatDisplayDate(dateStr)})`;
+        title.textContent = `दिवस ${toDevanagari(dayNum)} / ${toDevanagari(resolvedTotalDays)} (${formatDisplayDate(dateStr)})`;
 
         let content = `
           <div class="stat-row">
@@ -2066,10 +2126,11 @@
       function renderSettings() {
         const sadhana = getActiveSadhana();
         if (!sadhana) return;
+        const totalDays = Math.max(1, diffDaysISO(sadhana.startDate, sadhana.endDate) + 1);
 
         document.getElementById('setSadhanaName').textContent = sadhana.name;
         document.getElementById('setSadhanaTarget').textContent = formatCount(sadhana.totalTarget) + ' जप';
-        document.getElementById('setSadhanaDates').textContent = `${formatDisplayDate(sadhana.startDate)} ते ${formatDisplayDate(sadhana.endDate)} (२१ दिवस निश्चित)`;
+        document.getElementById('setSadhanaDates').textContent = `${formatDisplayDate(sadhana.startDate)} ते ${formatDisplayDate(sadhana.endDate)} (${toDevanagari(totalDays)} दिवस)`;
         document.getElementById('setSadhanaTime').textContent = `${sadhana.startTime || '--'} ते ${sadhana.endTime || '--'}`;
       }
 
@@ -2323,22 +2384,72 @@
         renderCounter();
       });
 
-      /* --- Sadhana Management & Modal (Rule 1: Fixed 21 Days) --- */
+      /* --- Sadhana Management & Modal (Custom Dates / Flexible Days) --- */
       const sadhanaModal = document.getElementById('sadhanaModal');
       const sadhanaForm = document.getElementById('sadhanaForm');
+      const sadhanaTargetInput = document.getElementById('sadhanaTarget');
+      const sadhanaDaysInput = document.getElementById('sadhanaDays');
+      const sadhanaStartDateInput = document.getElementById('sadhanaStartDate');
+      const sadhanaEndDateInput = document.getElementById('sadhanaEndDate');
+      const sadhanaPlanPreview = document.getElementById('sadhanaPlanPreview');
+
+      function updateSadhanaPlanPreview() {
+        const target = Math.max(1, parseNumericInput(sadhanaTargetInput.value) || 0);
+        const start = sadhanaStartDateInput.value;
+        const end = sadhanaEndDateInput.value;
+        let days = Math.max(1, parseNumericInput(sadhanaDaysInput.value) || 1);
+        if (isValidISODate(start) && isValidISODate(end)) {
+          days = Math.max(1, diffDaysISO(start, end) + 1);
+        }
+        const daily = target > 0 ? Math.ceil(target / days) : 0;
+        sadhanaPlanPreview.textContent = `कालावधी: ${toDevanagari(days)} दिवस • नियोजित दैनिक लक्ष्य: ${formatCount(daily)} जप`;
+      }
+
+      sadhanaTargetInput.addEventListener('input', updateSadhanaPlanPreview);
+
+      sadhanaDaysInput.addEventListener('input', function () {
+        const days = parseNumericInput(this.value);
+        if (days >= 1 && isValidISODate(sadhanaStartDateInput.value)) {
+          sadhanaEndDateInput.value = addDaysISO(sadhanaStartDateInput.value, days - 1);
+          updateSadhanaPlanPreview();
+        }
+      });
+
+      sadhanaStartDateInput.addEventListener('change', function () {
+        if (!isValidISODate(this.value)) return;
+        const days = Math.max(1, parseNumericInput(sadhanaDaysInput.value) || DEFAULT_SADHANA_DAYS);
+        if (!isValidISODate(sadhanaEndDateInput.value) || diffDaysISO(this.value, sadhanaEndDateInput.value) < 0) {
+          sadhanaEndDateInput.value = addDaysISO(this.value, days - 1);
+        } else {
+          sadhanaDaysInput.value = diffDaysISO(this.value, sadhanaEndDateInput.value) + 1;
+        }
+        updateSadhanaPlanPreview();
+      });
+
+      sadhanaEndDateInput.addEventListener('change', function () {
+        if (!isValidISODate(this.value) || !isValidISODate(sadhanaStartDateInput.value)) return;
+        let diff = diffDaysISO(sadhanaStartDateInput.value, this.value);
+        if (diff < 0) {
+          this.value = sadhanaStartDateInput.value;
+          diff = 0;
+        }
+        sadhanaDaysInput.value = diff + 1;
+        updateSadhanaPlanPreview();
+      });
 
       document.getElementById('newSadhanaBtn').addEventListener('click', () => {
-        document.getElementById('sadhanaModalTitle').textContent = 'नवीन साधना संकल्प (२१ दिवस)';
+        document.getElementById('sadhanaModalTitle').textContent = 'नवीन साधना संकल्प';
         document.getElementById('sadhanaEditId').value = '';
         document.getElementById('sadhanaName').value = '';
-        document.getElementById('sadhanaTarget').value = '125000';
+        sadhanaTargetInput.value = '125000';
 
-        const today = new Date();
-        const startIso = formatDateISO(today);
-        document.getElementById('sadhanaStartDate').value = startIso;
-        document.getElementById('sadhanaEndDate').value = calculateStrict21DayEnd(startIso);
+        const startIso = formatDateISO(new Date());
+        sadhanaStartDateInput.value = startIso;
+        sadhanaDaysInput.value = String(DEFAULT_SADHANA_DAYS);
+        sadhanaEndDateInput.value = addDaysISO(startIso, DEFAULT_SADHANA_DAYS - 1);
         document.getElementById('sadhanaStartTime').value = '06:00';
         document.getElementById('sadhanaEndTime').value = '07:30';
+        updateSadhanaPlanPreview();
 
         sadhanaModal.classList.add('open');
       });
@@ -2347,23 +2458,18 @@
         const s = getActiveSadhana();
         if (!s) return;
 
-        document.getElementById('sadhanaModalTitle').textContent = 'साधना संपादन करा (२१ दिवस निश्चित)';
+        document.getElementById('sadhanaModalTitle').textContent = 'साधना संपादन करा';
         document.getElementById('sadhanaEditId').value = s.id;
         document.getElementById('sadhanaName').value = s.name;
-        document.getElementById('sadhanaTarget').value = s.totalTarget;
-        document.getElementById('sadhanaStartDate').value = s.startDate;
-        document.getElementById('sadhanaEndDate').value = calculateStrict21DayEnd(s.startDate);
+        sadhanaTargetInput.value = s.totalTarget;
+        sadhanaStartDateInput.value = s.startDate;
+        sadhanaEndDateInput.value = s.endDate;
+        sadhanaDaysInput.value = String(Math.max(1, diffDaysISO(s.startDate, s.endDate) + 1));
         document.getElementById('sadhanaStartTime').value = s.startTime || '06:00';
         document.getElementById('sadhanaEndTime').value = s.endTime || '07:30';
+        updateSadhanaPlanPreview();
 
         sadhanaModal.classList.add('open');
-      });
-
-      // Strictly lock end date to start date + 20 days (21 days total)
-      document.getElementById('sadhanaStartDate').addEventListener('change', function () {
-        if (this.value) {
-          document.getElementById('sadhanaEndDate').value = calculateStrict21DayEnd(this.value);
-        }
       });
 
       document.getElementById('closeSadhanaModalBtn').addEventListener('click', () => sadhanaModal.classList.remove('open'));
@@ -2372,12 +2478,28 @@
         e.preventDefault();
         const editId = document.getElementById('sadhanaEditId').value;
         const name = document.getElementById('sadhanaName').value.trim();
-        const totalTarget = parseInt(document.getElementById('sadhanaTarget').value) || 125000;
-        const startDate = document.getElementById('sadhanaStartDate').value;
-        // Strictly enforced 21 days
-        const endDate = calculateStrict21DayEnd(startDate);
+        const totalTarget = parseNumericInput(sadhanaTargetInput.value);
+        const startDate = sadhanaStartDateInput.value;
+        let endDate = sadhanaEndDateInput.value;
         const startTime = document.getElementById('sadhanaStartTime').value;
         const endTime = document.getElementById('sadhanaEndTime').value;
+
+        if (!name) {
+          alert('कृपया साधनेचे नाव प्रविष्ट करा.');
+          return;
+        }
+        if (!totalTarget || totalTarget <= 0) {
+          alert('कृपया वैध एकूण संकल्प संख्या प्रविष्ट करा.');
+          return;
+        }
+        if (!isValidISODate(startDate) || !isValidISODate(endDate)) {
+          alert('कृपया वैध प्रारंभ आणि समाप्ती दिनांक निवडा.');
+          return;
+        }
+        if (diffDaysISO(startDate, endDate) < 0) {
+          alert('समाप्ती दिनांक प्रारंभ दिनांकापेक्षा आधीचा असू शकत नाही.');
+          return;
+        }
 
         if (editId) {
           const idx = appState.sadhanas.findIndex(s => s.id === editId);
@@ -2411,6 +2533,9 @@
         sadhanaModal.classList.remove('open');
         renderHeaderSadhanaList();
         renderDashboard();
+        renderCounter();
+        renderLogs();
+        renderCalendar();
         renderSettings();
       });
 
@@ -2418,6 +2543,7 @@
         appState.activeSadhanaId = this.value;
         saveState(appState);
         renderDashboard();
+        renderCounter();
         renderLogs();
         renderCalendar();
         renderSettings();
@@ -2427,17 +2553,17 @@
         document.getElementById('calDayDetailsCard').style.display = 'none';
       });
 
-      /* --- WhatsApp Sharing (Explicit 21-Day Format) --- */
+      /* --- WhatsApp Sharing --- */
       document.getElementById('shareBtn').addEventListener('click', () => {
         const s = getActiveSadhana();
         const m = computeSadhanaMetrics(s);
 
         const text =
-`🚩 *मंत्र साधना डायरी (२१ दिवस संकल्प)* 🚩
+`🚩 *मंत्र साधना डायरी* 🚩
 साधना: *${s.name}*
-निश्चित कालावधी: २१ दिवस (${formatDisplayDate(s.startDate)} ते ${formatDisplayDate(s.endDate)})
+कालावधी: ${toDevanagari(m.totalDays)} दिवस (${formatDisplayDate(s.startDate)} ते ${formatDisplayDate(s.endDate)})
 एकूण संकल्प: ${formatCount(m.totalTarget)} जप
-चालू दिवस: दिवस ${toDevanagari(m.currentDayNum)} / २१ (${toDevanagari(m.remainingDays)} दिवस शिल्लक)
+चालू दिवस: दिवस ${toDevanagari(m.currentDayNum)} / ${toDevanagari(m.totalDays)} (${toDevanagari(m.remainingDays)} दिवस शिल्लक)
 पूर्ण झालेला जप: ${formatCount(m.totalDone)} (${formatMalaBreakdown(m.totalDone)})
 प्रगती: ${toDevanagari(m.progressPct)}%
 आजचे आवश्यक लक्ष्य: ${formatCount(m.requiredDaily)} जप
@@ -2492,13 +2618,9 @@
         reader.onload = function (evt) {
           try {
             const data = JSON.parse(evt.target.result);
-            if (data && Array.isArray(data.sadhanas)) {
+            if (data && Array.isArray(data.sadhanas) && data.sadhanas.length > 0) {
               if (confirm('बॅकअप लोड केल्यास सध्याचा डेटा बदलला जाईल. पुढे जायचे का?')) {
-                // Ensure strictly 21-day lock on restored data
-                data.sadhanas.forEach(s => {
-                  s.endDate = calculateStrict21DayEnd(s.startDate);
-                });
-                appState = data;
+                appState = sanitizeState(data);
                 saveState(appState);
                 renderHeaderSadhanaList();
                 renderDashboard();
